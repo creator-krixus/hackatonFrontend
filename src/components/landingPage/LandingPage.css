@@ -202,6 +202,10 @@ a {
     position: relative;
     overflow-x: hidden;
     overflow-y: hidden;
+    align-items: center;
+    justify-items: center;
+    align-items: center;
+    justify-items: center;
 }
 
 .main-benefits .wave-pink-inverted {
@@ -213,8 +217,38 @@ a {
 
 .main-benefits .benefits-container {
     display: grid;
+    row-gap: 30px;
     grid-area: 2 / 3;
     grid-template-columns: repeat(2, 1fr);
+}
+
+.main-benefits .button-container {
+    grid-area: 3 / 3;
+    transform: translateY(100%);
+    visibility: hidden;
+
+    animation-name: button-container;
+    animation-duration: 0.5s;
+    animation-delay: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes button-container {
+    0% {
+        transform: translateY(100%);
+        
+
+    }
+    100% {
+        transform: translateY(0px);
+        visibility: visible;
+        
+    }
+}
+
+.main-benefits .button-container .register {
+    background: var(--dark-pink);
 }
 
 .main-benefits .wave-pink {
@@ -223,6 +257,7 @@ a {
     position: absolute;
     bottom: 0;
 }
+
 
 
 

@@ -47,6 +47,9 @@ export default function LandingPage() {
                         <h3>Regístrate. Se parte de nuestra comunidad</h3>
                         <img className="singin" src={singin} alt=""/>
                     </div>
+                    <div className="button-container">
+                        <button class="secondary-button register"><a href="/">Regístrate</a></button>
+                    </div>
                     <img className="wave-pink" src={wavepink} alt="Pink waves"/>
                 </section>
             </main>
