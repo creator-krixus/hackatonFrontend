@@ -11,6 +11,7 @@ import singin from "../../assets/images/Sign In.png"
 import './LandingPage.css';
 
 export default function LandingPage() {
+    // JS code
     return (
         <div>
             <main className="main">
