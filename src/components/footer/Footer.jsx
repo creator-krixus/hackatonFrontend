@@ -3,6 +3,7 @@ import "./footer.css"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faEnvelope, faPhone, faMapMarked} from '@fortawesome/free-solid-svg-icons'
 import {faFacebook, faTwitter, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons'
+import { Link } from 'react-router-dom';
 
 
 export default function Footer() {
@@ -19,18 +20,18 @@ export default function Footer() {
     <h3>Company<span>name</span></h3>
 
     <p class="footer-links">
-        <a href="#" class="link-1">Home</a>
+        <Link to="#" class="link-1">Home</Link>
         
-        <a href="#">Pilar Laboral</a>
+        <Link to="#">Pilar Laboral</Link>
     
-        <a href="#">Pilar Financiero</a>
+        <Link to="#">Pilar Financiero</Link>
     
-        <a href="#">Pilar Emocional</a>
+        <Link to="#">Pilar Emocional</Link>
         
-        <a href="#">Faq</a>
+        <Link to="#">Faq</Link>
         
-        <a href="#">Contacto</a>
-        <a href="#">Sobre nosotros</a>
+        <Link to="#">Contacto</Link>
+        <Link to="#">Sobre nosotros</Link>
     </p>
 
     <p class="footer-company-name">Company Name © {year}</p>
@@ -50,7 +51,7 @@ export default function Footer() {
 
     <div>
     <FontAwesomeIcon icon={faEnvelope}/>
-        <p><a href="mailto:support@company.com">support@company.com</a></p>
+        <p><Link to="mailto:support@company.com">support@company.com</Link></p>
     </div>
 
 </div>
@@ -64,10 +65,10 @@ export default function Footer() {
 
     <div class="footer-icons">
 
-        <a href="#"> <FontAwesomeIcon icon={faFacebook}/> </a>
-        <a href="#"><FontAwesomeIcon icon={faTwitter}/></a>
-        <a href="#"><FontAwesomeIcon icon={faLinkedin}/></a>
-        <a href="#"><FontAwesomeIcon icon={faInstagram}/></a>
+        <Link to="#"> <FontAwesomeIcon icon={faFacebook}/> </Link>
+        <Link to="#"><FontAwesomeIcon icon={faTwitter}/></Link>
+        <Link to="#"><FontAwesomeIcon icon={faLinkedin}/></Link>
+        <Link to="#"><FontAwesomeIcon icon={faInstagram}/></Link>
         
 
     </div>
