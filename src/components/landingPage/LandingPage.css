@@ -4,14 +4,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* min-width: 320px; */
     font-size: 62.5%;
 }
-
-/* html {
-    font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
-} */
 
 :root {
     --light-green: #CCD9BF;
@@ -26,11 +20,6 @@
     --md: 1.6rem;
     --lg: 2.2rem;
 }
-
-/* body {
-    min-width: 320px;
-} */
-
 .a {
     font-size: var(--sm);
     text-decoration: none;

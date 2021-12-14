@@ -14,8 +14,8 @@ import './LandingPage.css';
 export default function LandingPage() {
     // JS code
     return (
-        <div>
-            <main className="main">
+        <div >
+            {/* <div className="main"> */}
                 <section className="main-aboutus">
                     <img className="waves-blue-inverted" src={waveblueinverted} alt="Inverted blue waves"/>
                     <p className="p">Nacemos con el objetivo de ayudar y apoyar a los trabajadores ofreciendoles herramientaspara su vida financiera, laboral y emocional</p>
@@ -54,7 +54,7 @@ export default function LandingPage() {
                     </div>
                     <img className="wave-pink" src={wavepink} alt="Pink waves"/>
                 </section>
-            </main>
+            {/* </div> */}
         </div>
     )
 }
