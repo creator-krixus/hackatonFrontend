@@ -1,6 +1,6 @@
 import React from 'react'
-import menu from '../../assets/image/bars-solid.svg'
-import icon from '../../assets/image/meteor-solid.svg'
+import menu from '../../assets/icons/bars-solid.svg'
+import icon from '../../assets/icons/meteor-solid.svg'
 import './Header.css'
 
 export default function Header() {
