@@ -1,6 +1,7 @@
-import React from 'react'
-import waveorangeinverted from '../../assets/borders/waveorangeinverted.png'
-import waveorange from '../../assets/borders/waveorange.png'
+import React from 'react';
+import waveorangeinverted from '../../assets/borders/waveorangeinverted.png';
+import waveorange from '../../assets/borders/waveorange.png';
+import { Link } from 'react-router-dom';
 import './Login.css'
 
 export default function Login() {
@@ -12,16 +13,16 @@ export default function Login() {
                 <form className="main-form" action="">
                     <div className="main-form-fields">
                         <label htmlFor="mail"></label>
-                        <input type="email" name="mail" placeholder="Correo electrónico"/>
+                        <input className="input" type="email" name="mail" placeholder="Correo electrónico"/>
                     </div>
                     
                     <div className="main-form-fields">
                         <label htmlFor="passw"></label>
-                        <input type="password" name="passw" placeholder="Contraseña"/>
+                        <input className="input" type="password" name="passw" placeholder="Contraseña"/>
                     </div>
-                    <input className="secondary-button register" type="submit" value="Enviar"/>
+                    <input className="secondary-button register input" type="submit" value="Enviar"/>
                 </form>
-                <a href="register.html">¿No tienes cuenta? Crea una cuenta</a>
+                <Link className="a" to="register.html">¿No tienes cuenta? Crea una cuenta</Link>
                 <img className="down" src={waveorange} alt="Orange waves"/>
 
                 
