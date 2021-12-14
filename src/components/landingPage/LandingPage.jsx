@@ -42,9 +42,9 @@ export default function LandingPage() {
                     </div>
                     <div className="container-buttons">
                         
-                        <button ref={el =>btnFin = el}className="secondary-button financiera"> <Link className="a"   to="./financiero.html">Financiero</Link></button>
-                        <button ref={el =>btnLab = el} className="secondary-button laboral"> <Link className="a"   to="./laboral.html">Laboral</Link></button>
-                        <button ref={el =>btnEmo = el} className="secondary-button emocional"> <Link className="a"   to="./emocional.html">Emocional</Link></button>
+                        <button ref={el =>btnFin = el}className="secondary-button financiera"> <Link className="a"   to="financiero">Financiero</Link></button>
+                        <button ref={el =>btnLab = el} className="secondary-button laboral"> <Link className="a"   to="laboral">Laboral</Link></button>
+                        <button ref={el =>btnEmo = el} className="secondary-button emocional"> <Link className="a"   to="emocional">Emocional</Link></button>
                     </div>
                     
                     <h4 className="h4">Conocélos para saber como poder ayudarte</h4>
