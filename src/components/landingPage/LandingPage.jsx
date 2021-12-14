@@ -37,13 +37,14 @@ export default function LandingPage() {
                     <p className="p">Nacemos con el objetivo de ayudar y apoyar a los trabajadores ofreciendoles herramientaspara su vida financiera, laboral y emocional</p>
                     <div className="aboutus-container">
                         <img ref={el =>searching = el} src={searchinglooking} alt="Searching Looking"/>
+                        
+                        <h3 className="h3">Nuestros tres pilares</h3>
                     </div>
                     <div className="container-buttons">
                         
-                        <button ref={el =>btnFin = el}className="secondary-button financiera"> <Link   to="./financiero.html">Financiero</Link></button>
-                        <button ref={el =>btnLab = el} className="secondary-button laboral"> <Link   to="./laboral.html">Laboral</Link></button>
-                        <button ref={el =>btnEmo = el} className="secondary-button emocional"> <Link   to="./emocional.html">Emocional</Link></button>
-                        <h3 className="h3">Nuestros tres pilares</h3>
+                        <button ref={el =>btnFin = el}className="secondary-button financiera"> <Link className="a"   to="./financiero.html">Financiero</Link></button>
+                        <button ref={el =>btnLab = el} className="secondary-button laboral"> <Link className="a"   to="./laboral.html">Laboral</Link></button>
+                        <button ref={el =>btnEmo = el} className="secondary-button emocional"> <Link className="a"   to="./emocional.html">Emocional</Link></button>
                     </div>
                     
                     <h4 className="h4">Conocélos para saber como poder ayudarte</h4>
@@ -52,11 +53,7 @@ export default function LandingPage() {
 
                 <section className="main-services">
                     <img  className="wave-green-inverted" src={wavegreeninverted} alt="Inverted green waves"/>
-                    <h3>Te invitamos a tener un abrebocas de nuestro servicio</h3>
-                    <div className="services-container" >
-                    <img  className="wave-green-inverted" src={wavegreeninverted} alt="Inverted green waves"/>
-                    <h3 className="h3">Te invitamos a tener un abrebocas de nuestro servicio</h3> 
-                    </div>
+                    <h3 className="h3">Te invitamos a tener un abrebocas de nuestro servicio</h3>
                     <div className="services-container">
                         <p className="p">Te tomará de 5 a 10 minutos</p>
                         <button ref={el =>btnServ = el} className="encuesta">link a encuesta</button>
@@ -68,16 +65,13 @@ export default function LandingPage() {
                 <section className="main-benefits">
                     <img ref={el =>wave = el} className="wave-pink-inverted" src={wavepinkinverted} alt="Inverted pink waves"/>
                     <div className="benefits-container" >
-                        <h3>Regístrate. Se parte de nuestra comunidad</h3>
+                        <h3 className="h3">Regístrate. Se parte de nuestra comunidad</h3>
                         <img ref={el =>sing = el} className="singin" src={singin} alt=""/>
+                    </div>                 
+                    <div className="button-container">
+                        <button ref={el =>btnRegistro = el} class="secondary-button register"><Link className="a" to="/">Regístrate</Link></button>
                     </div>
                     <img ref={el =>registrate = el} className="wave-pink" src={wavepink} alt="Pink waves"/>
-                        <h3>Regístrate. Se parte de nuestra comunidad</h3>
-                                          
-                    <div className="button-container">
-                        <button ref={el =>btnRegistro = el} class="secondary-button register"><Link className="a" to="/"> 1Regístrate</Link></button>
-                    </div>
-                    <img className="wave-pink" src={wavepink} alt="Pink waves"/>
                 </section>
             {/* </div> */}
         </div>

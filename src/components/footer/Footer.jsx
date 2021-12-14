@@ -1,9 +1,9 @@
 import React from 'react'
-import "./footer.css"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faEnvelope, faPhone,  faMapMarked} from '@fortawesome/free-solid-svg-icons'
 import {faFacebook, faTwitter, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'react-router-dom';
+// import "./footer.css"
 
 
 export default function Footer() {
@@ -13,7 +13,7 @@ export default function Footer() {
 
     return (
   <div>
-      <footer className="footer-distributed">
+      <div className="footer-distributed">
             <div className="footer-left">
                 <h3 className="h3-footer">Company<span>name</span></h3>
                 <p className="footer-links">
@@ -55,7 +55,7 @@ export default function Footer() {
                     <Link to="#"><FontAwesomeIcon icon={faInstagram}/></Link>
                 </div>
             </div>
-        </footer>
+        </div>
     </div>
  )   
 }
