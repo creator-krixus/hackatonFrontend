@@ -1,14 +1,11 @@
 import React, {useRef, useEffect, useState} from 'react'
 import { TweenMax,Power3 } from 'gsap';
-import waveblueinverted from "../../assets/borders/waveblueinverted.png";
-import waveblue from "../../assets/borders/waveblue.png";
-import wavegreeninverted from "../../assets/borders/wavegreeninverted.png";
-import wavegreen from "../../assets/borders/wavegren.png";
-import wavepinkinverted from "../../assets/borders/wavepinkinverted.png";
-import wavepink from "../../assets/borders/wavepink.png";
-import searchinglooking from "../../assets/images/Searching - Looking.svg";
-import navigateboat from "../../assets/images/Navigate - Rock the boat.png";
-import singin from "../../assets/images/Sign In.png";
+import wavepurpleinverted from "../../assets/borders/wavepurpleinverted.png";
+import wavepurple from "../../assets/borders/wavepurple.png";
+
+import searchinglooking from "../../assets/images/purpleSearching-Looking.svg";
+import navigateboat from "../../assets/images/purpleNavigate -Rocktheboat.png";
+import singin from "../../assets/images/purpleSignIn.png";
 import { Link } from 'react-router-dom';
 import './LandingPage.css';
 
@@ -33,7 +30,7 @@ export default function LandingPage() {
         <div >
             {/* <div className="main"> */}
                 <section className="main-aboutus">
-                    <img className="waves-blue-inverted" src={waveblueinverted} alt="Inverted blue waves"/>
+                    <img className="waves-blue-inverted" src={wavepurpleinverted} alt="Inverted blue waves"/>
                     <p className="p">Nacemos con el objetivo de ayudar y apoyar a los trabajadores ofreciendoles herramientaspara su vida financiera, laboral y emocional</p>
                     <div className="aboutus-container">
                         <img ref={el =>searching = el} src={searchinglooking} alt="Searching Looking"/>
@@ -48,22 +45,22 @@ export default function LandingPage() {
                     </div>
                     
                     <h4 className="h4">Conocélos para saber como poder ayudarte</h4>
-                    <img className="waves-blue" src={waveblue} alt="Waves blue"/>
+                    <img className="waves-blue" src={wavepurple} alt="Waves blue"/>
                 </section>
 
                 <section className="main-services">
-                    <img  className="wave-green-inverted" src={wavegreeninverted} alt="Inverted green waves"/>
+                    <img  className="wave-green-inverted" src={wavepurpleinverted} alt="Inverted green waves"/>
                     <h3 className="h3">Te invitamos a tener un abrebocas de nuestro servicio</h3>
                     <div className="services-container">
                         <p className="p">Te tomará de 5 a 10 minutos</p>
                         <button ref={el =>btnServ = el} className="encuesta">link a encuesta</button>
                     </div>
                     <img  ref={el =>bote = el} className="navigate-boat" src={navigateboat} alt="Boat"/>
-                    <img ref={el =>callService = el} className="wave-green" src={wavegreen} alt="Green waves"/>
+                    <img ref={el =>callService = el} className="wave-green" src={wavepurple} alt="Green waves"/>
                 </section>
 
                 <section className="main-benefits">
-                    <img ref={el =>wave = el} className="wave-pink-inverted" src={wavepinkinverted} alt="Inverted pink waves"/>
+                    <img ref={el =>wave = el} className="wave-pink-inverted" src={wavepurpleinverted} alt="Inverted pink waves"/>
                     <div className="benefits-container" >
                         <h3 className="h3">Regístrate. Se parte de nuestra comunidad</h3>
                         <img ref={el =>sing = el} className="singin" src={singin} alt=""/>
@@ -71,7 +68,7 @@ export default function LandingPage() {
                     <div className="button-container">
                         <button ref={el =>btnRegistro = el} class="secondary-button register"><Link className="a" to="/">Regístrate</Link></button>
                     </div>
-                    <img ref={el =>registrate = el} className="wave-pink" src={wavepink} alt="Pink waves"/>
+                    <img ref={el =>registrate = el} className="wave-pink" src={wavepurple} alt="Pink waves"/>
                 </section>
             {/* </div> */}
         </div>
