@@ -15,23 +15,23 @@ export default function Financiero() {
     
 
 
-    const reducir = () =>{
-        TweenMax.to(work,.8,{duration: 2,
-            x: 300,
-            backgroundColor: 'green',
-            borderRadius: '20%',
-            border: '5px solid blue',
-            ease: 'linear',width:100, height:100, rotate: 360, ease:Power3.easeOut})
-        setState(true);
-    }    
-    const ampliar = () =>{
-        TweenMax.to(work,.8,{duration: 2, x: -5,rotate: 360, backgroundColor: 'blue', borderRadius: '0%',width:200, height:200, ease:Power3.easeOut})
-        setState(false);
-    }
+    // const reducir = () =>{
+    //     TweenMax.to(work,.8,{duration: 2,
+    //         x: 300,
+    //         backgroundColor: 'green',
+    //         borderRadius: '20%',
+    //         border: '5px solid blue',
+    //         ease: 'linear',width:100, height:100, rotate: 360, ease:Power3.easeOut})
+    //     setState(true);
+    // }    
+    // const ampliar = () =>{
+    //     TweenMax.to(work,.8,{duration: 2, x: -5,rotate: 360, backgroundColor: 'blue', borderRadius: '0%',width:200, height:200, ease:Power3.easeOut})
+    //     setState(false);
+   
 
     useEffect(() =>{
         TweenMax.to(main,0,{css:{visibility:'visible'}}) 
-       TweenMax.staggerFrom([girl,finances],0.8,{opacity:1, x:40, ease:Power3.easeOut, delay:.2})},[])
+       TweenMax.staggerFrom([girl,finances,work],0.8,{opacity:0, y:-540, ease:Power3.easeOut, delay:1})},[])
 
     return (
        <div >
@@ -42,7 +42,7 @@ export default function Financiero() {
                 <section className="main-tools">
                     <h4 className="tools--title title">Manejar tu presupuesto</h4>
                     <p className="tools--prg paragraph">Saber en que lo gastamos es el primer paso</p>
-                    <img onClick={state !== true ? reducir:ampliar} ref={el =>work = el} className="tools--img image" src={Work}  alt="Work from home" />
+                    <img ref={el =>work = el} className="tools--img image" src={Work}  alt="Work from home" />
                 </section>
                 <section className="main-calculators">
                     <h4 className="calculators--title title">Acceder a calculadoras para tu día a día</h4>
