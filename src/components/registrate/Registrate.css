@@ -1,0 +1,33 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    background-color: var(--light-green);
+    display: grid;
+    position: relative;
+    padding: 0 15px 0 20px;
+}
+
+
+.last-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 70px;
+    opacity: 0;
+}
+
+.main .down {
+    min-width: 100%;
+    max-height: 65px;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+}
+
+
