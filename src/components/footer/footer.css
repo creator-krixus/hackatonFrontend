@@ -100,24 +100,26 @@
 	line-height: 3.8rem;
 }
 
-.footer-distributed .footer-center p{
+.footer-distributed .footer-center .p{
 	display: inline-block;
 	color: #ffffff;
+	font-size:1.8rem;
   	font-weight: 500;
 	vertical-align: middle;
 	margin:0;
 }
 
-.footer-distributed .footer-center p span{
+.footer-distributed .footer-center .p .span{
 	display:block;
 	font-weight: normal;
 	font-size:1.4rem;
 	/* line-height:2; */
 }
 
-.footer-distributed .footer-center p a{
+.footer-distributed .footer-center .p .a{
 	color:  rgb(255, 255, 255);
-	text-decoration: none;;
+	text-decoration: none;
+	font-size:1.8rem;
 }
 
 .footer-distributed .footer-links a:before {
