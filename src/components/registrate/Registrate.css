@@ -5,14 +5,14 @@
     padding: 0;
 }
 
-.main {
+/* .main {
     width: 100%;
     height: auto;
     background-color: var(--light-green);
     display: grid;
     position: relative;
     padding: 0 15px 0 20px;
-}
+} */
 
 
 .last-title {
@@ -22,7 +22,7 @@
     opacity: 0;
 }
 
-.main .down {
+.down {
     min-width: 100%;
     max-height: 65px;
     position: absolute;
