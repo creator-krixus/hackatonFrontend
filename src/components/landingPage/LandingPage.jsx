@@ -7,7 +7,8 @@ import wavepinkinverted from "../../assets/borders/wavepinkinverted.png";
 import wavepink from "../../assets/borders/wavepink.png";
 import searchinglooking from "../../assets/images/Searching - Looking.svg";
 import navigateboat from "../../assets/images/Navigate - Rock the boat.png";
-import singin from "../../assets/images/Sign In.png"
+import singin from "../../assets/images/Sign In.png";
+import { Link } from 'react-router-dom';
 import './LandingPage.css';
 
 export default function LandingPage() {
@@ -23,9 +24,9 @@ export default function LandingPage() {
                         <h3 className="h3">Nuestros tres pilares</h3>
                     </div>
                     <div className="container-buttons">
-                        <button className="secondary-button financiera"><a className="a" href="./financiero.html">Financiero</a></button>
-                        <button className="secondary-button laboral"><a className="a" href="./laboral.html">Laboral</a></button>
-                        <button className="secondary-button emocional"><a className="a" href="./emocional.html">Emocional</a></button>
+                        <button className="secondary-button financiera"><Link className="a" to="./financiero.html">Financiero</Link></button>
+                        <button className="secondary-button laboral"><Link className="a" to="./laboral.html">Laboral</Link></button>
+                        <button className="secondary-button emocional"><Link className="a" to="./emocional.html">Emocional</Link></button>
                     </div>
                     <h4 className="h4">Conocélos para saber como poder ayudarte</h4>
                     <img className="waves-blue" src={waveblue} alt="Waves blue"/>
@@ -49,7 +50,7 @@ export default function LandingPage() {
                         <img className="singin" src={singin} alt=""/>
                     </div>
                     <div className="button-container">
-                        <button class="secondary-button register"><a className="a" href="/">Regístrate</a></button>
+                        <button class="secondary-button register"><Link className="a" to="/">Regístrate</Link></button>
                     </div>
                     <img className="wave-pink" src={wavepink} alt="Pink waves"/>
                 </section>
