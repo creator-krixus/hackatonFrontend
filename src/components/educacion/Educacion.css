@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    background-color: var(--light-green);
+    display: grid;
+    position: relative;
+    padding: 0 15px 0 20px;
+}
+
+
+.title {
+    font-size: var(--lg);
+}
+
+.paragraph {
+    font-size: var(--md);
+    text-align: justify;
+}
+
+.image {
+    width: 150px;
+    height: 150px;
+}
+
+.main-learn {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 7px;
+    align-items: center;
+    justify-items: center;
+}
+
+.learn--title{
+    grid-area: 1 / 1 / 2 / 2;
+}
+.learn--img {
+    grid-area: 2 / 1 / 4 / 2;
+}
+.learn--prg:nth-child(3){
+    grid-area: 1 / 2 / 2 / 3;
+}
+.learn--prg:nth-child(4){
+    grid-area: 2 / 2 / 3 / 3;
+}
+.learn--prg:nth-child(5){
+    grid-area: 3 / 2 / 4 / 3;
+}
+
