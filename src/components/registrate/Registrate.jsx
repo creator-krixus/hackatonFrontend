@@ -13,15 +13,22 @@ export default function Registrate() {
 
    
    useEffect(() =>{
+
+      
       console.log(ImgRegist);
-      TweenMax.to(ImgRegist,.8,{opacity:1,y:-20, ease:Power3.easeOut,delay:.2})
-      TweenMax.to(textItem,.8,{opacity:1,y:-20, ease:Power3.easeOut, delay:.5})},[])
+      TweenMax.to(ImgRegist,.8,{opacity:1,y:1, ease:Power3.easeOut,delay:.2})
+      TweenMax.to(textItem,.8,{opacity:1, y:1, ease:Power3.easeOut, delay:.5})},[])
    
     return (
        <div>
            <main className='main'>
                <h3 ref={el =>{textItem = el}} className="last-title">Entre muchas otras herramientas. ¡Regístrate!</h3>
                <img ref={el =>{ImgRegist = el}} src= {picos} alt="Green peaks" className="down" />
+               <div className="register-container">
+                  <h3 className="last-title">Entre muchas otras herramientas. ¡Regístrate!</h3>
+                  <button className="secondary-button register"><a href="/">Regístrate</a></button>
+               </div>
+               
             </main>
             
       </div>
