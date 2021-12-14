@@ -30,7 +30,7 @@
     min-width: 320px;
 } */
 
-a {
+.a {
     /* text-decoration: none; */
     color: black;
     text-align: center;
@@ -80,7 +80,7 @@ a {
     background: var(--dark-orange);
 }
 
-.main-form-fields input {
+.main-form-fields .input {
     width: 230px;
     height: 27px;
     border: none;
