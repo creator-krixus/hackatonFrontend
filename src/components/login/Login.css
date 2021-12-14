@@ -21,7 +21,7 @@
     --lg: 2.2rem;
 }
 
-a {
+.a {
     color: black;
     text-align: center;
     font-size: 1.4rem;
@@ -74,7 +74,7 @@ a {
     background: var(--dark-orange);
 }
 
-.main-form-fields input {
+.main-form-fields .input {
     width: 230px;
     height: 27px;
     border: none;
