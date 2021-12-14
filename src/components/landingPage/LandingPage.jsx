@@ -50,7 +50,7 @@ export default function LandingPage() {
                         <img className="singin" src={singin} alt=""/>
                     </div>
                     <div className="button-container">
-                        <button class="secondary-button register"><Link className="a" to="/">Regístrate</Link></button>
+                        <button class="secondary-button register"><Link className="a" to="register">Regístrate</Link></button>
                     </div>
                     <img className="wave-pink" src={wavepink} alt="Pink waves"/>
                 </section>

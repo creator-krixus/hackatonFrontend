@@ -15,7 +15,7 @@ export default function Footer() {
   <div>
       <footer className="footer-distributed">
             <div className="footer-left">
-                <h3 className="h3">Company<span>name</span></h3>
+                <h3 className="h3-footer">Company<span>name</span></h3>
                 <p className="footer-links">
                     <Link to="#" className="link-1">Home</Link>
                     <Link to="#">Pilar Laboral</Link>
