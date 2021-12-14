@@ -1,20 +1,20 @@
+import * as React from "react";
 import './App.css';
-import Financiero from './components/financiero/Financiero';
-import Header from './components/header/Header';
 import LandingPage from './components/landingPage/LandingPage';
-import Educacion from './components/educacion/Educacion';
-import Registrate from './components/registrate/Registrate';
+import { Route, Routes } from "react-router-dom";
+import Header from './components/header/Header';
+import Login from './components/login/Login'
+import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <LandingPage />
-      <Financiero />
-      <Educacion />
-      <Registrate />
+      <Routes>
+        <Route path="login" element={<Login />} />
+      </Routes>
     </div>
   );
-}
-
+ }
 export default App;

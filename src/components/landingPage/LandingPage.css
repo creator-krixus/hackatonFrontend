@@ -31,7 +31,7 @@
     min-width: 320px;
 } */
 
-a {
+.a {
     font-size: var(--sm);
     text-decoration: none;
     color: black;
@@ -39,12 +39,11 @@ a {
 
 .main {
     font-family: 'Roboto', sans-serif;
-    
-    min-width: 320px;
+    /* min-width: 320px; */
     display: grid;
 }
 
-.main h3 {
+.main .h3 {
     font-size: var(--lg);
     font-weight: 500;
 }
@@ -59,7 +58,7 @@ a {
     overflow-x: hidden;
 }
 
-.main h3:nth-child(1) {
+.main .h3:nth-child(1) {
     padding: 15px;
     text-align: center;
 }
@@ -71,7 +70,7 @@ a {
     top: 0 !important;
 }
 
-.main-aboutus p {
+.main-aboutus .p {
     font-size: var(--md);
     padding: 5px 15px 0 15px;
     text-align: justify;
@@ -104,15 +103,15 @@ a {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.container-buttons button:nth-child(1){
+.container-buttons .financiera:nth-child(1){
     background: var(--light-green);
 }
 
-.container-buttons button:nth-child(2){
+.container-buttons .laboral:nth-child(2){
     background: var(--light-blue);
 }
 
-.container-buttons button:nth-child(3){
+.container-buttons .emocional:nth-child(3){
     background: var(--light-pink);
 }
 
@@ -123,7 +122,7 @@ a {
     bottom: 0;
 }
 
-.main-aboutus h4 {
+.main-aboutus .h4 {
     padding-top: 12px;
     font-size: 1.8rem;
     font-weight: 500;
@@ -147,7 +146,7 @@ a {
     top: 0 !important;
 }
 
-.main-services h3{
+.main-services .h3{
     text-align: left !important;
     margin-top: 75px;
 }
@@ -159,13 +158,13 @@ a {
     justify-items: center;
 }
 
-.main-services h3 {
+.main-services .h3 {
     font-size: 2.5rem;
     font-weight: 500;
     margin-left: 12px;
 }
 
-.services-container p {
+.services-container .p {
     font-size: var(--sm);
 }
 
@@ -202,6 +201,10 @@ a {
     position: relative;
     overflow-x: hidden;
     overflow-y: hidden;
+    align-items: center;
+    justify-items: center;
+    align-items: center;
+    justify-items: center;
 }
 
 .main-benefits .wave-pink-inverted {
@@ -213,8 +216,38 @@ a {
 
 .main-benefits .benefits-container {
     display: grid;
+    row-gap: 30px;
     grid-area: 2 / 3;
     grid-template-columns: repeat(2, 1fr);
+}
+
+.main-benefits .button-container {
+    grid-area: 3 / 3;
+    transform: translateY(100%);
+    visibility: hidden;
+
+    animation-name: button-container;
+    animation-duration: 0.5s;
+    animation-delay: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes button-container {
+    0% {
+        transform: translateY(100%);
+        
+
+    }
+    100% {
+        transform: translateY(0px);
+        visibility: visible;
+        
+    }
+}
+
+.main-benefits .button-container .register {
+    background: var(--dark-pink);
 }
 
 .main-benefits .wave-pink {
@@ -222,20 +255,6 @@ a {
     max-height: 75px;
     position: absolute;
     bottom: 0;
-}
-
-
-
-
-footer {
-    background-color: var(--dark-pink);
-}
-
-footer p {
-    font-size: var(--sm);
-    font-weight: bold;
-    padding: 10px 0 10px 10px;
-    
 }
 
 

@@ -8,7 +8,8 @@ import wavepinkinverted from "../../assets/borders/wavepinkinverted.png";
 import wavepink from "../../assets/borders/wavepink.png";
 import searchinglooking from "../../assets/images/Searching - Looking.svg";
 import navigateboat from "../../assets/images/Navigate - Rock the boat.png";
-import singin from "../../assets/images/Sign In.png"
+import singin from "../../assets/images/Sign In.png";
+import { Link } from 'react-router-dom';
 import './LandingPage.css';
 
 export default function LandingPage() {
@@ -30,12 +31,13 @@ export default function LandingPage() {
     TweenMax.staggerFrom([bote,btnServ],0.8,{opacity:0, y:-540, x:-1000,rotate: 360,ease:Power3.easeOut, delay:0.1})
 
     TweenMax.staggerFrom([sing],0.8,{opacity:0, y:-540, x:-1000, rotate: 360,ease:Power3.easeOut, delay:0.1})},[])
+    // JS code
     return (
         <div>
             <main className="main">
                 <section className="main-aboutus">
                     <img className="waves-blue-inverted" src={waveblueinverted} alt="Inverted blue waves"/>
-                    <p>Nacemos con el objetivo de ayudar y apoyar a los trabajadores ofreciendoles herramientaspara su vida financiera, laboral y emocional</p>
+                    <p className="p">Nacemos con el objetivo de ayudar y apoyar a los trabajadores ofreciendoles herramientaspara su vida financiera, laboral y emocional</p>
                     <div className="aboutus-container">
                         <img ref={el =>searching = el} src={searchinglooking} alt="Searching Looking"/>
                         <h3>Nuestros tres pilares</h3>
@@ -44,17 +46,30 @@ export default function LandingPage() {
                         <button ref={el =>btnFin = el}className="secondary-button financiera"><a href="./financiero.html">Financiero</a></button>
                         <button ref={el =>btnLab = el} className="secondary-button laboral"><a href="./laboral.html">Laboral</a></button>
                         <button ref={el =>btnEmo = el} className="secondary-button emocional"><a href="./emocional.html">Emocional</a></button>
+                        <img src={searchinglooking} alt="Searching Looking"/>
+                        <h3 className="h3">Nuestros tres pilares</h3>
                     </div>
-                    <h4>Conocélos para saber como poder ayudarte</h4>
+                    <div className="container-buttons">
+                        <button className="secondary-button financiera"><Link className="a" to="./financiero.html">Financiero</Link></button>
+                        <button className="secondary-button laboral"><Link className="a" to="./laboral.html">Laboral</Link></button>
+                        <button className="secondary-button emocional"><Link className="a" to="./emocional.html">Emocional</Link></button>
+                    </div>
+                    <h4 className="h4">Conocélos para saber como poder ayudarte</h4>
                     <img className="waves-blue" src={waveblue} alt="Waves blue"/>
                 </section>
 
                 <section className="main-services">
                     <img  className="wave-green-inverted" src={wavegreeninverted} alt="Inverted green waves"/>
                     <h3>Te invitamos a tener un abrebocas de nuestro servicio</h3>
-                    <div className="services-container">
+                    <div className="services-container" >
                         <p>Te tomará de 5 a 10 minutos</p>
-                        <button ref={el =>btnServ = el} className="encuesta">link a encuesta</button>
+                        <button ref={el =>btnServ = el} className="encuesta">link a encuesta</button> 
+                    <img className="wave-green-inverted" src={wavegreeninverted} alt="Inverted green waves"/>
+                    <h3 className="h3">Te invitamos a tener un abrebocas de nuestro servicio</h3> 
+                    </div>
+                    <div className="services-container">
+                        <p className="p">Te tomará de 5 a 10 minutos</p>
+                        <button className="encuesta">link a encuesta</button>
                     </div>
                     <img  ref={el =>bote = el} className="navigate-boat" src={navigateboat} alt="Boat"/>
                     <img ref={el =>callService = el} className="wave-green" src={wavegreen} alt="Green waves"/>
@@ -67,6 +82,13 @@ export default function LandingPage() {
                         <img ref={el =>sing = el} className="singin" src={singin} alt=""/>
                     </div>
                     <img ref={el =>callService = el} className="wave-pink" src={wavepink} alt="Pink waves"/>
+                        <h3 className="h3">Regístrate. Se parte de nuestra comunidad</h3>
+                        <img className="singin" src={singin} alt=""/>
+                    
+                    <div className="button-container">
+                        <button class="secondary-button register"><Link className="a" to="/">Regístrate</Link></button>
+                    </div>
+                    <img className="wave-pink" src={wavepink} alt="Pink waves"/>
                 </section>
             </main>
         </div>
