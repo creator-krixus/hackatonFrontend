@@ -12,14 +12,14 @@ export default function Footer() {
 
     return (
   <div>
-      <footer class="footer-distributed">
+      <footer className="footer-distributed">
 
-<div class="footer-left">
+<div className="footer-left">
 
     <h3>Company<span>name</span></h3>
 
-    <p class="footer-links">
-        <a href="#" class="link-1">Home</a>
+    <p className="footer-links">
+        <a href="#" className="link-1">Home</a>
         
         <a href="#">Pilar Laboral</a>
     
@@ -33,10 +33,10 @@ export default function Footer() {
         <a href="#">Sobre nosotros</a>
     </p>
 
-    <p class="footer-company-name">Company Name © {year}</p>
+    <p className="footer-company-name">Company Name © {year}</p>
 </div>
 
-<div class="footer-center">
+<div className="footer-center">
 
     <div>
     <FontAwesomeIcon icon={faMapMarked}/>
@@ -55,14 +55,14 @@ export default function Footer() {
 
 </div>
 
-<div class="footer-right">
+<div className="footer-right">
 
-    <p class="footer-company-about">
+    <p className="footer-company-about">
         <span>About the company</span>
         Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
     </p>
 
-    <div class="footer-icons">
+    <div className="footer-icons">
 
         <a href="#"> <FontAwesomeIcon icon={faFacebook}/> </a>
         <a href="#"><FontAwesomeIcon icon={faTwitter}/></a>
