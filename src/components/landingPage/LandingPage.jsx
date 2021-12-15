@@ -38,9 +38,9 @@ export default function LandingPage() {
                     </div>
                     <div className="container-buttons">
                         
-                        <button ref={el =>btnFin = el} className="secondary-button financiera"> <Link className="a"   to="financiero">Financiero</Link></button>
-                        <button ref={el =>btnLab = el} className="secondary-button laboral"> <Link className="a"   to="laboral">Laboral</Link></button>
-                        <button ref={el =>btnEmo = el} className="secondary-button emocional"> <Link className="a"   to="emocional">Emocional</Link></button>
+                        <Link ref={el =>btnFin = el} className="secondary-button financiera a"   to="financiero">Financiero</Link>
+                        <Link ref={el =>btnLab = el} className="secondary-button laboral a"   to="laboral">Laboral</Link>
+                        <Link ref={el =>btnEmo = el} className="secondary-button emocional a"   to="emocional">Emocional</Link>
                     </div>
                     
                     <h4 className="h4">Conocélos para saber como poder ayudarte</h4>
@@ -52,7 +52,8 @@ export default function LandingPage() {
                     <h3 className="h3">Te invitamos a tener un abrebocas de nuestro servicio</h3>
                     <div className="services-container">
                         <p className="p">Te tomará de 5 a 10 minutos</p>
-                        <button ref={el =>btnServ = el} className="encuesta">link a encuesta</button>
+                        <Link ref={el =>btnServ = el} className="secondary-button encuesta" to="encuesta">Link a encuesta</Link>
+                        
                     </div>
                     <img  ref={el =>bote = el} className="navigate-boat" src={navigateboat} alt="Boat"/>
                     <img ref={el =>callService = el} className="wave-green" src={wavepurple} alt="Green waves"/>
@@ -65,7 +66,7 @@ export default function LandingPage() {
                         <img ref={el =>sing = el} className="singin" src={singin} alt=""/>
                     </div>                 
                     <div className="button-container">
-                        <button ref={el =>btnRegistro = el} class="secondary-button register"><Link className="a" to="/">Regístrate</Link></button>
+                        <Link ref={el =>btnRegistro = el} className="secondary-button register" to="register">Regístrate</Link>
                     </div>
                     <img ref={el =>registrate = el} className="wave-pink" src={wavepurple} alt="Pink waves"/>
                 </section>

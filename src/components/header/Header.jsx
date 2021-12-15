@@ -17,6 +17,12 @@ export default function Header() {
     if(idRuta === 'financiero'){
         color = {background: '#507445'}
     }
+    if(idRuta === 'laboral'){
+        color = {background: '#517EA6'}
+    }
+    if(idRuta === 'register' || idRuta === 'login'){
+        color = {background: '#F2994B'}
+      }
 
     return (
         <div>
