@@ -31,7 +31,7 @@ export default function LandingPage() {
                 <section className="main-aboutus">
                     
                     <img className="waves-blue-inverted" src={wavepurpleinverted} alt="Inverted blue waves"/>
-                    <p className="p">Nacemos con el objetivo de ayudar y apoyar a los trabajadores ofreciendoles herramientaspara su vida financiera, laboral y emocional</p>
+                    <p className="p">Nacemos con el objetivo de ayudar y apoyar a los trabajadores ofreciendoles herramientas para su vida financiera, laboral y emocional</p>
                     <div className="aboutus-container">
                         <img className="lookingPicture" ref={el =>searching = el} src={searchinglooking} alt="Searching Looking"/>
                         
@@ -55,7 +55,7 @@ export default function LandingPage() {
                         <p className="p">Te tomará de 5 a 10 minutos</p>
                         <button ref={el =>btnServ = el} className="encuesta">link a encuesta</button>
                     </div>
-                    <img  ref={el =>bote = el} className="navigate-boat" src={navigateboat} alt="Boat"/>
+                    <img className="purpleBote" ref={el =>bote = el}  src={navigateboat} alt="Boat"/>
                     <img ref={el =>callService = el} className="wave-green" src={wavepurple} alt="Green waves"/>
                 </section>
 

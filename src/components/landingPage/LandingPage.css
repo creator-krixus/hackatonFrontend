@@ -144,7 +144,7 @@
 .main-services {
     display: grid;
     width: auto;
-    height: 476px;
+    height: fit-content;
     background-color: var(--light-purple);
     position: relative;
     overflow-x: hidden;
@@ -192,10 +192,7 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.navigate-boat {
-    justify-self: center;
-    
-}
+
 
 .main-services .wave-green {
     min-width: 100%;
@@ -257,6 +254,9 @@
         
     }
 }
+.main-services {
+    height: fit-content;
+}
 
 .main-benefits .button-container .register {
     background: var(--dark-purple);
@@ -287,9 +287,12 @@
 
 .main-aboutus{
     height: fit-content;
-    z-index: 1;
 }
 
+.main-services > .purpleBote {
+    height: 10%;
+    justify-self: center;
+}
 /* */
 .title-pilars {
     font-size: 20px;
@@ -323,6 +326,10 @@
     .p {
         font-size: 25px;
     }
+    .main-services > .purpleBote {
+        height: 30%;
+        justify-self: center;
+    }
  
 }
 
@@ -345,5 +352,9 @@
     }
     .p {
         font-size: 25px;
+    }
+    .main-services > .purpleBote {
+        height: 50%;
+        justify-self: center;
     }
 }
