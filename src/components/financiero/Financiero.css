@@ -37,7 +37,7 @@ a {
 
 
 
-.container {
+.container-fin {
     width: 100%;
     height: auto; 
     background-color: var(--light-green);
@@ -46,7 +46,7 @@ a {
     padding: 0 15px 0 20px;
 }
 
-.container .up {
+.container-fin .up {
     min-width: 100%;
     max-height: 65px;
     position: absolute;
@@ -199,7 +199,7 @@ a {
     background: var(--dark-green);
 }
 
-.container .down {
+.container-fin .down {
     min-width: 100%;
     max-height: 65px;
     position: absolute;

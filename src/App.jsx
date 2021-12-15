@@ -2,11 +2,13 @@ import './App.css';
 import { Route, Routes } from "react-router-dom";
 import Header from './components/header/Header';
 import LandingPage from './components/landingPage/LandingPage';
-import Register from './components/register/Register'
-import Login from './components/login/Login'
-import Financiero from './components/financiero/Financiero'
-import Emocional from './components/emocional/Emocional'
-import Footer from './components/footer/Footer'
+import Register from './components/register/Register';
+import Login from './components/login/Login';
+import Financiero from './components/financiero/Financiero';
+import Emocional from './components/emocional/Emocional';
+import Laboral from './components/laboral/Laboral'
+import Encuesta from './components/encuesta/Encuesta';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -18,9 +20,11 @@ function App() {
         <Route path="register" element={<Register />} />
         <Route path="financiero" element={<Financiero />} />
         <Route path="emocional" element={<Emocional />} />
+        <Route path="laboral" element={<Laboral />} />
+        <Route path="encuesta" element={<Encuesta />} />
       </Routes>
-      <Footer />
-    </div>
+      <Footer/>
+     </div>
   );
 }
 

@@ -29,7 +29,7 @@
     grid-row: 3 / 3;
 }
 
-.main {
+.container-log {
     font-family: 'Roboto', sans-serif;
     /* min-width: 320px; */
     width: 100%;
@@ -40,7 +40,7 @@
     position: relative;
 }
 
-.main .up {
+.container-log .up {
     min-width: 100%;
     max-height: 75px;
     position: absolute;
@@ -80,7 +80,7 @@
     border-radius: 3px;
 }
 
-.main .down {
+.container-log .down {
     min-width: 100%;
     max-height: 65px;
     position: absolute;

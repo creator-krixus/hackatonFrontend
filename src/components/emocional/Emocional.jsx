@@ -8,7 +8,7 @@ import curlPink from '../../assets/borders/curlpink.png'
 
 export default function Emocional() {
     return (
-        <div className="main">
+        <div className="container-emo">
             <img src={curl} alt="Blue peaks" className="up" />
             
             <img className="hero" src={pink} alt="Girl in a computer" />
