@@ -15,15 +15,13 @@ export default function Registrate() {
    useEffect(() =>{
 
       
-      TweenMax.to(textItem,.8,{opacity:1, y:1, ease:Power3.easeOut, delay:1})},[])
+      TweenMax.to(textItem, .8, {opacity:1, y:1, ease:Power3.easeOut, delay:1})}, [])
    
     return (
-       <div className='registrate-cont'>
-           <div>
-               <h3 className='paragraph' ref={el =>{textItem = el}} >Entre muchas otras herramientas. ¡Regístrate!</h3>
-               <div           className="register-container">                 
-                  <button className="secondary-button register"><Link to="register">Regístrate</Link></button>
-               </div>
+       <div>
+           <div className='register-container-reg'>
+               <h3 className='paragraph' ref={el =>{textItem = el}} >Entre muchas otras herramientas. ¡Regístrate!</h3>             
+               <Link to="register" className="secondary-button register">Regístrate</Link>
             </div>
       </div>
    )
