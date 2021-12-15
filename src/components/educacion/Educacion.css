@@ -3,6 +3,19 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    --light-green: #CCD9BF;
+    --dark-green: #507445;
+    --light-blue: #B6D6F2;
+    --dark-blue: #517EA6;
+    --light-pink: #FFB5B5;
+    --dark-pink: #FF7878;
+    --turquoise: #37A6A6;
+    --beige: #F2DCC2;
+    --sm: 1.2rem;
+    --md: 1.6rem;
+    --lg: 2.2rem;
+}
 
 .container {
     width: 100%;

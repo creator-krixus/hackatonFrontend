@@ -28,8 +28,8 @@
     --light-orange: #F2BF80;
 
     --sm: 1.2rem;
-    --md: 1.6rem;
-    --lg: 2.2rem;
+    --md: 2.0rem;
+    --lg: 2.5rem;
 }
 
 /* body {
@@ -37,10 +37,9 @@
 } */
 
 .a {
-    font-size: var(--md);
+    font-size: var(--sm);
     text-decoration: none;
     color: black;
-
 }
 
 .main {
@@ -92,39 +91,40 @@
 
 .container-buttons {
     display: grid;
-    /* grid-template-columns: repeat(3, 1fr); */
-    /* gap: 10px; */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     justify-items: center;
     align-items: center;
+    
+
+}
+.container-buttons > button {
+    size: 20px;
+    display:inline
 }
 
+
 .secondary-button {
-    display: grid;
     border-radius: 12px;
     border: 1px solid black;
-    width: 110px;
+    width: 90px !important;
     height: 35px;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    align-items: center;
-    justify-items: center;
 }
 
 .container-buttons .financiera:nth-child(1){
     background: var(--light-green);
-    font-size: 1.3rem;
 }
 
 .container-buttons .laboral:nth-child(2){
     background: var(--light-blue);
-    font-size: 1.3rem;
 }
 
 .container-buttons .emocional:nth-child(3){
     background: var(--light-pink);
-    font-size: 1.3rem;
 }
 
 .main-aboutus .waves-blue {
@@ -181,16 +181,14 @@
 }
 
 .main-services .encuesta {
-    text-decoration: none;
     background-color: var(--dark-purple);
     border-radius: 12px;
     border: 1px solid black;
-    width: 110px;
+    width: 90px;
     height: 35px;
     cursor: pointer;
-    font-size: var(--sm);
+    font-size: 1rem;
     font-weight: bold;
-    color: black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -261,14 +259,7 @@
 }
 
 .main-benefits .button-container .register {
-    text-decoration: none;
     background: var(--dark-purple);
-    width: 110px;
-    height: 35px;
-    cursor: pointer;
-    font-size: var(--sm);
-    font-weight: bold;
-    color: black;
 }
 
 .main-benefits .wave-pink {
@@ -276,4 +267,83 @@
     max-height: 75px;
     position: absolute;
     bottom: 0;
+}
+/*   modificaciones responsive */ 
+.main-benefits .wave-pink {
+    min-width: 100%;
+    max-height: 75px;
+    position: absolute;
+    bottom: 0;
+}
+/* tamaño imagen */ 
+.aboutus-container > .searching-Picture{
+    height: 100%;
+}
+
+.main-aboutus > div > .initial-paragraph {
+    padding: 5%;    
+    font-size: 20px;
+    }
+
+.main-aboutus{
+    height: fit-content;
+    z-index: 1;
+}
+
+/* */
+.title-pilars {
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    position:relative;
+    text-align: center;
+}
+.aboutus-container > .lookingPicture {
+    height: 100%;
+    display: inline;
+}
+
+@media (min-width: 880px) {
+
+    .waves-blue-inverted{
+        display: block;
+		width: 100%;
+	
+    }
+    .main-aboutus >.p {
+    
+    font-size: 30px;
+    }
+    .title-pilars {
+        font-size: 28px;
+    }
+    .h4 {
+        font-size: 25px;
+    }
+    .p {
+        font-size: 25px;
+    }
+ 
+}
+
+@media (min-width: 1280px) {
+
+    .waves-blue-inverted{
+        display: block;
+		width: 100%;
+	
+    }
+    .main-aboutus >.p {
+    
+    font-size: 40px;
+    }
+    .h3 {
+        font-size: 40px;
+    }
+    .h4 {
+        font-size: 25px;
+    }
+    .p {
+        font-size: 25px;
+    }
 }

@@ -1,7 +1,7 @@
 import React, {useRef, useEffect } from 'react'
 import { TweenMax,Power3 } from 'gsap';
 import './Financiero.css';
-import peaksgreeninverted from '../../assets/components/peaksgreeninverted.png'
+import peaksgreeninverted from '../../assets/borders/peaksgreeninverted.png'
 import peaksgreen from '../../assets/borders/peaksgreen.png'
 import BusinessPlan from '../../assets/images/Business Plan.svg'
 import Work from '../../assets/images//Work From Home.png'

@@ -29,18 +29,19 @@ export default function LandingPage() {
         <div >
             
                 <section className="main-aboutus">
+                    
                     <img className="waves-blue-inverted" src={wavepurpleinverted} alt="Inverted blue waves"/>
                     <p className="p">Nacemos con el objetivo de ayudar y apoyar a los trabajadores ofreciendoles herramientaspara su vida financiera, laboral y emocional</p>
                     <div className="aboutus-container">
-                        <img ref={el =>searching = el} src={searchinglooking} alt="Searching Looking"/>
+                        <img className="lookingPicture" ref={el =>searching = el} src={searchinglooking} alt="Searching Looking"/>
                         
                         <h3 className="h3">Nuestros tres pilares</h3>
                     </div>
                     <div className="container-buttons">
                         
-                        <Link ref={el =>btnFin = el} className="secondary-button financiera a"   to="financiero">Financiero</Link>
-                        <Link ref={el =>btnLab = el} className="secondary-button laboral a"   to="laboral">Laboral</Link>
-                        <Link ref={el =>btnEmo = el} className="secondary-button emocional a"   to="emocional">Emocional</Link>
+                        <button ref={el =>btnFin = el} className="secondary-button financiera"> <Link className="a"   to="financiero">Financiero</Link></button>
+                        <button ref={el =>btnLab = el} className="secondary-button laboral"> <Link className="a"   to="laboral">Laboral</Link></button>
+                        <button ref={el =>btnEmo = el} className="secondary-button emocional"> <Link className="a"   to="emocional">Emocional</Link></button>
                     </div>
                     
                     <h4 className="h4">Conocélos para saber como poder ayudarte</h4>
@@ -52,8 +53,7 @@ export default function LandingPage() {
                     <h3 className="h3">Te invitamos a tener un abrebocas de nuestro servicio</h3>
                     <div className="services-container">
                         <p className="p">Te tomará de 5 a 10 minutos</p>
-                        <Link ref={el =>btnServ = el} className="secondary-button encuesta" to="encuesta">Link a encuesta</Link>
-                        
+                        <button ref={el =>btnServ = el} className="encuesta">link a encuesta</button>
                     </div>
                     <img  ref={el =>bote = el} className="navigate-boat" src={navigateboat} alt="Boat"/>
                     <img ref={el =>callService = el} className="wave-green" src={wavepurple} alt="Green waves"/>
@@ -66,7 +66,7 @@ export default function LandingPage() {
                         <img ref={el =>sing = el} className="singin" src={singin} alt=""/>
                     </div>                 
                     <div className="button-container">
-                        <Link ref={el =>btnRegistro = el} className="secondary-button register" to="register">Regístrate</Link>
+                        <button ref={el =>btnRegistro = el} class="secondary-button register"><Link className="a" to="/">Regístrate</Link></button>
                     </div>
                     <img ref={el =>registrate = el} className="wave-pink" src={wavepurple} alt="Pink waves"/>
                 </section>

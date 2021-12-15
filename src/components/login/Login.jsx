@@ -22,7 +22,7 @@ export default function Login() {
                     </div>
                     <input className="secondary-button register input" type="submit" value="Enviar"/>
                 </form>
-                <Link className="a" to="register.html">¿No tienes cuenta? Crea una cuenta</Link>
+                <Link className="a" to="register">¿No tienes cuenta? Crea una cuenta</Link>
                 <img className="down" src={waveorange} alt="Orange waves"/>
 
                 
