@@ -10,6 +10,7 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.24.0",
     "gsap": "^3.8.0",
     "react": "^17.0.2",
     "react-bootstrap-dropdown-menu": "^1.1.23",
@@ -18,7 +19,11 @@
     "react-router": "^6.1.1",
     "react-router-dom": "^6.1.1",
     "react-scripts": "4.0.3",
+<<<<<<< HEAD
     "react-transition-group": "^4.4.2",
+=======
+    "sweetalert": "^2.1.2",
+>>>>>>> 6aabf8aab5db7409796c10532b0558e43baf3b6c
     "web-vitals": "^1.1.2"
   },
   "scripts": {

@@ -1,0 +1,56 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.agendar-cont{
+    
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-blue);
+    display: grid;
+    position: relative;
+    padding: 10px 15px 10px 20px;
+    overflow-x: hidden;
+    
+}
+
+.agendar-container{
+    display: grid;
+    grid-template-rows: 20px 20px;
+    justify-items: center;
+    padding: 5px 5px 5px 5px;
+}
+
+.secondary-button-agendar {
+    border-radius: 12px;
+    border: 1px solid black;
+    width: 90px;
+    height: 35px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.agendar-container .agendar {
+    background: var(--dark-blue);
+}
+.paragraph{
+    display: grid;
+    grid-template-rows: 10px 10px;
+    justify-items: end;
+    padding: 5px 5px 5px 5px;
+}
+
+.paragraph-agendar {
+    font-size: xx-large;
+    text-align: right;
+    padding: 20px 5px 10px auto;
+   
+    
+}
+
