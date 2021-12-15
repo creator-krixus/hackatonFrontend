@@ -67,6 +67,10 @@
     background: var(--dark-orange);
 }
 
+.main-form-fields {
+    margin-bottom: 20px;
+}
+
 .main-form-fields .input {
     width: 230px;
     height: 27px;
