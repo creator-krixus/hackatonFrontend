@@ -5,7 +5,7 @@ import peaksgreeninverted from '../../assets/components/peaksgreeninverted.png'
 import BusinessPlan from '../../assets/images/Business Plan.svg'
 import Work from '../../assets/images//Work From Home.png'
 import Finances from '../../assets/images/Finances.png'
-import Educacion from '../educacion/Educacion'
+import Educacion from '../educacion/Educacion';
 
 export default function Financiero() {
     let main = useRef(null);
@@ -29,12 +29,12 @@ export default function Financiero() {
    
 
     useEffect(() =>{
-        TweenMax.to(main,0,{css:{visibility:'visible'}}) 
-       TweenMax.staggerFrom([girl,finances,work],0.8,{opacity:0, y:-540, ease:Power3.easeOut, delay:1})},[])
+        TweenMax.to(main, 0, {css:{visibility:'visible'}}) 
+       TweenMax.staggerFrom([girl, finances, work], 0.8, {opacity:0, y:-540, ease:Power3.easeOut, delay:1})}, [])
 
     return (
        <div >
-           <main ref={el => main = el} className='main'>
+           <div ref={el => main = el} className='container'>
                     <img src={peaksgreeninverted}  alt= "Green peaks" className="up" />
                     <img ref={el => girl = el} className='hero' src={BusinessPlan} alt="Girl in a computer" />
                     <h3 className="principal-title" >Herramientas y recursos para:</h3>
@@ -56,7 +56,7 @@ export default function Financiero() {
                 </section>
                 <Educacion/>
 
-            </main>
+            </div>
       </div>
    )
 }
