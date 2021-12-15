@@ -7,8 +7,9 @@ import './Register.css'
 export default function Register() {
     return (
         <div>
-            <main className="main">
+            <div className="container-register">
                 <img className="up" src={waveorangeinverted} alt="Inverted orange waves"/>
+
                 <form className="main-form" action="">
                     <div className="main-form-fields">
                         <label htmlFor="name"></label>
@@ -29,13 +30,15 @@ export default function Register() {
                         <label htmlFor="cpassw"></label>
                         <input className="input" type="password" name="cpassw" placeholder="Confirmar contraseña"/>
                     </div>
-                    <input className="secondary-button register input" type="submit" value="Enviar"/>
+                    <input className="secondary-button register" type="submit" value="Enviar"/>
                 </form>
-                <Link className="a" to="./login.html">¿Ya tienes cuenta? Inicia sesión</Link>
+                
+
+                <Link className="a" to="login">¿Ya tienes cuenta? Inicia sesión</Link>
                 <img className="down" src={waveorange} alt="Orange waves"/>
 
                 
-            </main>
+            </div>
         </div>
     )
 }

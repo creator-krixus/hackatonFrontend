@@ -7,7 +7,7 @@ import './Login.css'
 export default function Login() {
     return (
         <div>
-            <main className="main">
+            <div className="container-log">
                 <img className="up" src={waveorangeinverted} alt="Inverted orange waves"/>
                 
                 <form className="main-form" action="">
@@ -26,7 +26,7 @@ export default function Login() {
                 <img className="down" src={waveorange} alt="Orange waves"/>
 
                 
-            </main>
+            </div>
         </div>
     )
 }

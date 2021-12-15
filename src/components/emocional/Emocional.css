@@ -19,12 +19,15 @@
     --lg: 2.2rem;
 }
 
-body {
+/* body {
     min-width: 320px;
+} */
+
+.a {
+    text-decoration: none;
 }
 
-
-.main {
+.container-emo {
     width: 100%;
     height: auto;
     background-color: var(--light-pink);
@@ -34,7 +37,7 @@ body {
     overflow-x: hidden;
 }
 
-.main .up {
+.container-emo .up {
     min-width: 100%;
     max-height: 65px;
     position: absolute;
@@ -152,10 +155,10 @@ body {
 }
 
 .register-container .register {
-    background: var(--dark-pink);
+    background: var(--dark-pink) !important;
 }
 
-.main .down {
+.container-emo .down {
     min-width: 100%;
     max-height: 65px;
     position: absolute;

@@ -6,6 +6,7 @@ import Register from './components/register/Register';
 import Login from './components/login/Login';
 import Financiero from './components/financiero/Financiero';
 import Emocional from './components/emocional/Emocional';
+import Laboral from './components/laboral/Laboral'
 import Encuesta from './components/encuesta/Encuesta';
 import Footer from './components/footer/Footer';
 
