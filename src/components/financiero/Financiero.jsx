@@ -55,6 +55,10 @@ export default function Financiero() {
                     <h4 className="spends--title title">Te contamos cuanto cobrar por un trabajo</h4>
                     <p className="spends--prg paragraph">Es sano hablar del dinero, nosotros te apoyamos.</p>
                     <p className="spends--prg paragraph">Una comunidad que se ayuda, se informa.</p>
+                    <div class="register-container">
+                         <h3 class="last-title">Entre muchas otras herramientas. ¡Regístrate!</h3>
+                            <button class="secondary-button register"><a href="/">Regístrate</a></button>
+                    </div>
                 </section>
             </main>
       </div>
