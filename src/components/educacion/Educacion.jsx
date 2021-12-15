@@ -8,11 +8,11 @@ export default function Educacion() {
         
             let callService = useRef(null);
             useEffect(() =>{
-                TweenMax.staggerFrom([callService],0.8,{opacity:0, y:-540,rotate:360, ease:Power3.easeOut, delay:1})},[])
+                TweenMax.staggerFrom([callService], 0.8, {opacity:0, y:-540, rotate:360, ease:Power3.easeOut, delay:1})},[])
     return (
         
        <div>
-           <main className='main'>
+           <div className='container'>
               <section className="main-learn">
                     <h4 className="learn--title title">Modulo de enseñanza.</h4>
                     <img ref={el =>callService = el} className="learn--img image" src={CallService} alt="Call service" />
@@ -20,7 +20,7 @@ export default function Educacion() {
                     <p className="learn--prg paragraph">Recorremos los principios básicos, que la deuda no lo ahogue.</p>
                     <p className="learn--prg paragraph">Cambia tus puntos por expreriencias en la plataforma</p>
                 </section>
-            </main>
+            </div>
       </div>
    )
 }

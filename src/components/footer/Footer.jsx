@@ -2,7 +2,7 @@ import React from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faEnvelope, faPhone, faMapMarked} from '@fortawesome/free-solid-svg-icons'
 import {faFacebook, faTwitter, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import "./footer.css"
 
 
@@ -11,9 +11,21 @@ export default function Footer() {
   const date = new Date();
   const year = date.getFullYear();
 
+  const location = useLocation();
+  const ruta = location.pathname
+  const idRuta = ruta.substring(1,20)
+  let color = {}
+
+  if(idRuta === 'emocional'){
+      color = {background: '#FF7878'}
+  }
+  if(idRuta === 'financiero'){
+      color = {background: '#507445'}
+  }
+
     return (
   <div>
-      <div className="footer-distributed">
+      <div className="footer-distributed" style={color}>
             <div className="footer-left">
                 <h3 className="h3-footer">Company<span className="span">name</span></h3>
                 <p className="footer-links">

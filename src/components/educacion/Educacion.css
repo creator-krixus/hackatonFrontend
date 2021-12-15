@@ -4,13 +4,13 @@
     padding: 0;
 }
 
-.main {
+.container {
     width: 100%;
     height: auto;
     background-color: var(--light-green);
     display: grid;
     position: relative;
-    padding: 0 15px 0 20px;
+    /* padding: 0 15px 0 20px; */
 }
 
 
