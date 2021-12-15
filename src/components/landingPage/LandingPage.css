@@ -37,9 +37,10 @@
 } */
 
 .a {
-    font-size: var(--sm);
+    font-size: var(--md);
     text-decoration: none;
     color: black;
+
 }
 
 .main {
@@ -91,33 +92,39 @@
 
 .container-buttons {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* gap: 10px; */
     justify-items: center;
     align-items: center;
 }
 
 .secondary-button {
+    display: grid;
     border-radius: 12px;
     border: 1px solid black;
-    width: 90px !important;
+    width: 110px;
     height: 35px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    align-items: center;
+    justify-items: center;
 }
 
 .container-buttons .financiera:nth-child(1){
     background: var(--light-green);
+    font-size: 1.3rem;
 }
 
 .container-buttons .laboral:nth-child(2){
     background: var(--light-blue);
+    font-size: 1.3rem;
 }
 
 .container-buttons .emocional:nth-child(3){
     background: var(--light-pink);
+    font-size: 1.3rem;
 }
 
 .main-aboutus .waves-blue {
@@ -170,18 +177,20 @@
 }
 
 .services-container .p {
-    font-size: var(--sm);
+    font-size: var(--md);
 }
 
 .main-services .encuesta {
+    text-decoration: none;
     background-color: var(--dark-purple);
     border-radius: 12px;
     border: 1px solid black;
-    width: 90px;
+    width: 110px;
     height: 35px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: var(--sm);
     font-weight: bold;
+    color: black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -252,7 +261,14 @@
 }
 
 .main-benefits .button-container .register {
+    text-decoration: none;
     background: var(--dark-purple);
+    width: 110px;
+    height: 35px;
+    cursor: pointer;
+    font-size: var(--sm);
+    font-weight: bold;
+    color: black;
 }
 
 .main-benefits .wave-pink {
