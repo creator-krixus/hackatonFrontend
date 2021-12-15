@@ -33,7 +33,7 @@ export default function Footer() {
   <div>
       <div className="footer-distributed" style={color}>
             <div className="footer-left">
-                <h3 className="h3-footer">Company<span className="span">name</span></h3>
+                <h3 className="h3-footer">T3<span className="span">DE</span></h3>
                 <p className="footer-links">
                     <Link to="#" className="a link-1">Home</Link>
                     <Link className="a" to="#">Pilar Laboral</Link>

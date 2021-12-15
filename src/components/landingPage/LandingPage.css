@@ -289,7 +289,7 @@
     height: fit-content;
 }
 
-.main-services > .purpleBote {
+.contenedorBote > .purpleBote {
     height: 10%;
     justify-self: center;
 }
@@ -326,7 +326,7 @@
     .p {
         font-size: 25px;
     }
-    .main-services > .purpleBote {
+    .contenedorBote > .purpleBote {
         height: 30%;
         justify-self: center;
     }
@@ -340,7 +340,7 @@
 		width: 100%;
 	
     }
-    .main-aboutus >.p {
+    .p {
     
     font-size: 40px;
     }
@@ -353,7 +353,7 @@
     .p {
         font-size: 25px;
     }
-    .main-services > .purpleBote {
+    .contenedorBote > .purpleBote {
         height: 50%;
         justify-self: center;
     }

@@ -55,7 +55,9 @@ export default function LandingPage() {
                         <p className="p">Te tomará de 5 a 10 minutos</p>
                         <button ref={el =>btnServ = el} className="encuesta">link a encuesta</button>
                     </div>
+                    <div className='contenedorBote'>
                     <img className="purpleBote" ref={el =>bote = el}  src={navigateboat} alt="Boat"/>
+                    </div>
                     <img ref={el =>callService = el} className="wave-green" src={wavepurple} alt="Green waves"/>
                 </section>
 
