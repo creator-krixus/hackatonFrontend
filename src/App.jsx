@@ -7,13 +7,13 @@ import Login from './components/login/Login'
 import Financiero from "./components/financiero/Financiero";
 import Educacion from "./components/educacion/Educacion";
 import Registrate from "./components/registrate/Registrate";
-
+import Comunidad from "./components/comunidad/Comunidad";
 
 function App() {
   return (
     <div className="App">
       <Header />
-     <Educacion />
+      <Comunidad />
       <Routes>
         <Route path="login" element={<Login />} />
       </Routes>
