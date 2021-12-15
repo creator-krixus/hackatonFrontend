@@ -6,6 +6,7 @@ import peaksgreeninverted from '../../assets/components/peaksgreeninverted.png'
 import BusinessPlan from '../../assets/images/Business Plan.svg'
 import Work from '../../assets/images//Work From Home.png'
 import Finances from '../../assets/images/Finances.png'
+import Educacion from '../educacion/Educacion'
 
 export default function Financiero() {
     let main = useRef(null);
@@ -56,6 +57,8 @@ export default function Financiero() {
                     <p className="spends--prg paragraph">Es sano hablar del dinero, nosotros te apoyamos.</p>
                     <p className="spends--prg paragraph">Una comunidad que se ayuda, se informa.</p>
                 </section>
+                <Educacion/>
+
             </main>
       </div>
    )
