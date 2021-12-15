@@ -17,8 +17,11 @@
     --dark-blue: #517EA6;
     --light-pink: #FFB5B5;
     --dark-pink: #FF7878;
-    --turquoise: #37A6A6;
-    --beige: #F2DCC2;
+    --light-mint: #C2DDC8;
+    --dark-mint :#99BFB3;
+    --light-purple: #C9B0EB;
+    --dark-purple: #996799;
+
     --sm: 1.2rem;
     --md: 1.6rem;
     --lg: 2.2rem;
@@ -32,7 +35,7 @@
     display: grid;
     grid-template-columns: 0.5fr 2fr 1fr;
     padding: 10px 6px 10px 6px;
-    background-color: var(--dark-blue);
+    background-color: var(--dark-purple);
     align-items: center;
     margin: 0;
 }

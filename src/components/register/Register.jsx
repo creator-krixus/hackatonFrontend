@@ -29,7 +29,7 @@ export default function Register() {
                         <label htmlFor="cpassw"></label>
                         <input className="input" type="password" name="cpassw" placeholder="Confirmar contraseña"/>
                     </div>
-                    <input className="input" className="secondary-button register" type="submit" value="Enviar"/>
+                    <input className="secondary-button register input" type="submit" value="Enviar"/>
                 </form>
                 <Link className="a" to="./login.html">¿Ya tienes cuenta? Inicia sesión</Link>
                 <img className="down" src={waveorange} alt="Orange waves"/>

@@ -1,20 +1,18 @@
-import React, {useRef, useEffect, useState} from 'react'
-import { Link } from 'react-router-dom';
+import React, {useRef, useEffect } from 'react'
 import { TweenMax,Power3 } from 'gsap';
 import './Financiero.css';
 import peaksgreeninverted from '../../assets/components/peaksgreeninverted.png'
 import BusinessPlan from '../../assets/images/Business Plan.svg'
 import Work from '../../assets/images//Work From Home.png'
 import Finances from '../../assets/images/Finances.png'
+import Educacion from '../educacion/Educacion'
 
 export default function Financiero() {
     let main = useRef(null);
     let girl = useRef(null);
     let finances = useRef(null);
     let work = useRef(null);
-    const[state, setState]= useState(false);
     
-
 
     // const reducir = () =>{
     //     TweenMax.to(work,.8,{duration: 2,
@@ -60,6 +58,8 @@ export default function Financiero() {
                             <button class="secondary-button register"><a href="/">Regístrate</a></button>
                     </div>
                 </section>
+                <Educacion/>
+
             </main>
       </div>
    )

@@ -1,6 +1,6 @@
 import React from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faEnvelope, faPhone,  faMapMarked} from '@fortawesome/free-solid-svg-icons'
+import {faEnvelope, faPhone, faMapMarked} from '@fortawesome/free-solid-svg-icons'
 import {faFacebook, faTwitter, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'react-router-dom';
 import "./footer.css"
