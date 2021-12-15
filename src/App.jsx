@@ -19,10 +19,11 @@ function App() {
         <Route path="register" element={<Register />} />
         <Route path="financiero" element={<Financiero />} />
         <Route path="emocional" element={<Emocional />} />
+        <Route path="laboral" element={<Laboral />} />
         <Route path="encuesta" element={<Encuesta />} />
       </Routes>
-      <Footer />
-    </div>
+      <Footer/>
+     </div>
   );
 }
 
