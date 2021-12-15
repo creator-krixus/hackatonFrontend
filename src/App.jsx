@@ -5,6 +5,7 @@ import LandingPage from './components/landingPage/LandingPage';
 import Register from './components/register/Register'
 import Login from './components/login/Login'
 import Financiero from './components/financiero/Financiero'
+import Emocional from './components/emocional/Emocional'
 import Footer from './components/footer/Footer'
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
-        
+        <Route path="financiero" element={<Financiero />} />
+        <Route path="emocional" element={<Emocional />} />
       </Routes>
       <Footer />
     </div>
