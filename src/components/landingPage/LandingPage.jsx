@@ -52,7 +52,7 @@ export default function LandingPage() {
                     <h3 className="h3">Te invitamos a tener un abrebocas de nuestro servicio</h3>
                     <div className="services-container">
                         <p className="p">Te tomará de 5 a 10 minutos</p>
-                        <Link ref={el =>btnServ = el} className="secondary-button encuesta" to="/">Link a encuesta</Link>
+                        <Link ref={el =>btnServ = el} className="secondary-button encuesta" to="encuesta">Link a encuesta</Link>
                         
                     </div>
                     <img  ref={el =>bote = el} className="navigate-boat" src={navigateboat} alt="Boat"/>
