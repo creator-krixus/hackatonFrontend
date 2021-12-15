@@ -1,13 +1,45 @@
-
-h1 {
-    font-size: 2rem;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* min-width: 320px; */
+    font-size: 62.5%;
+}
+
+/* html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+} */
+
+:root {
+    --light-green: #CCD9BF;
+    --dark-green: #507445;
+    --light-blue: #B6D6F2;
+    --dark-blue: #517EA6;
+    --light-pink: #FFB5B5;
+    --dark-pink: #FF7878;
+    --light-mint: #C2DDC8;
+    --dark-mint :#99BFB3;
+    --light-purple: #C9B0EB;
+    --dark-purple: #996799;
+    --dark-orange: #F2994B;
+    --light-orange: #F2BF80;
+
+    --sm: 1.2rem;
+    --md: 1.6rem;
+    --lg: 2.2rem;
+}
+
+/* body {
+    min-width: 320px;
+} */
+
+.a {
+    font-size: var(--sm);
+    text-decoration: none;
+    color: black;
 }
 
 .main {
@@ -27,7 +59,6 @@ h1 {
 }
 
 .hero {
-    opacity: ;
     margin-top: 70px;
     width: 230px;
     height: 230px;
@@ -120,5 +151,13 @@ h1 {
     grid-area: 2 / 2 / 3 / 3;
 }
 
+.register-container .register {
+    background: var(--dark-green);
+}
 
-
+.main .down {
+    min-width: 100%;
+    max-height: 65px;
+    position: absolute;
+    bottom: 0;
+}
