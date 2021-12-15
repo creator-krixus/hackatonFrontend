@@ -5,21 +5,22 @@ import LandingPage from './components/landingPage/LandingPage';
 import Register from './components/register/Register'
 import Login from './components/login/Login'
 import Financiero from "./components/financiero/Financiero";
-import Registrate from "./components/registrate/Registrate";
 import Emocional from './components/emocional/Emocional'
+import Laboral from './components/laboral/Laboral'
+
 
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      <Registrate />
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
         <Route path="financiero" element={<Financiero />} />
         <Route path="emocional" element={<Emocional />} />
+        <Route path="laboral" element={<Laboral />} />
       </Routes>
      </div>
   );
