@@ -25,7 +25,7 @@ useEffect(() =>{
 
     return (
 
-    <div className="main">
+    <div className="container-lab">
         <img src={bluePeaks} alt="Blue peaks" className="up"/>
         <img ref={el => chica = el} className="hero" src={girl} alt="Girl in a computer"/>
         <h3 className="principal-title" >Herramientas y recursos para:</h3>

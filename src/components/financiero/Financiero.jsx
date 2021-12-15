@@ -2,10 +2,12 @@ import React, {useRef, useEffect } from 'react'
 import { TweenMax,Power3 } from 'gsap';
 import './Financiero.css';
 import peaksgreeninverted from '../../assets/components/peaksgreeninverted.png'
+import peaksgreen from '../../assets/borders/peaksgreen.png'
 import BusinessPlan from '../../assets/images/Business Plan.svg'
 import Work from '../../assets/images//Work From Home.png'
 import Finances from '../../assets/images/Finances.png'
 import Educacion from '../educacion/Educacion';
+import Registrate from '../registrate/Registrate';
 
 export default function Financiero() {
     let main = useRef(null);
@@ -34,10 +36,10 @@ export default function Financiero() {
 
     return (
        <div >
-           <div ref={el => main = el} className='container'>
-                    <img src={peaksgreeninverted}  alt= "Green peaks" className="up" />
-                    <img ref={el => girl = el} className='hero' src={BusinessPlan} alt="Girl in a computer" />
-                    <h3 className="principal-title" >Herramientas y recursos para:</h3>
+           <div ref={el => main = el} className='container-fin'>
+                <img src={peaksgreeninverted}  alt= "Green peaks" className="up" />
+                <img ref={el => girl = el} className='hero' src={BusinessPlan} alt="Girl in a computer" />
+                <h3 className="principal-title" >Herramientas y recursos para:</h3>
                 <section className="main-tools">
                     <h4 className="tools--title title">Manejar tu presupuesto</h4>
                     <p className="tools--prg paragraph">Saber en que lo gastamos es el primer paso</p>
@@ -53,12 +55,10 @@ export default function Financiero() {
                     <h4 className="spends--title title">Te contamos cuanto cobrar por un trabajo</h4>
                     <p className="spends--prg paragraph">Es sano hablar del dinero, nosotros te apoyamos.</p>
                     <p className="spends--prg paragraph">Una comunidad que se ayuda, se informa.</p>
-                    <div class="register-container">
-                         <h3 class="last-title">Entre muchas otras herramientas. ¡Regístrate!</h3>
-                            <button class="secondary-button register"><a href="/">Regístrate</a></button>
-                    </div>
-                </section>
+                </section>    
                 <Educacion/>
+                <Registrate/>
+                <img src={peaksgreen} alt="Blue peaks" className="down"/>
 
             </div>
       </div>
