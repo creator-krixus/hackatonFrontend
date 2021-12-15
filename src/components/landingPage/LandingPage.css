@@ -43,7 +43,7 @@
     display: grid;
 }
 
-.main .h3 {
+.h3 {
     font-size: var(--lg);
     font-weight: 500;
 }
