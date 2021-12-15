@@ -21,7 +21,13 @@
     --lg: 2.2rem;
 }
 
-
+.a-register {
+    color: black;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    grid-row: 3 / 3;
+}
 
 .container-register {
     font-family: 'Roboto', sans-serif;
@@ -52,38 +58,37 @@
     position: relative;
 }
 
-.secondary-button {
+.register-reg {
     border-radius: 12px;
     border: 1px solid black;
     width: 75%;
     height: 30px;
     cursor: pointer;
-    font-size: 1rem;
     font-weight: bold;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.main-form .register {
+.main-form .register-reg {
     background: var(--dark-orange);
+    font-size: 1.5rem;
 }
 
 .main-form-fields {
     margin-bottom: 20px;
 }
 
-.main-form-fields .input {
+.main-form-fields .input-reg {
     width: 230px;
     height: 27px;
     border: none;
     border-radius: 3px;
 }
-.a {
-    text-decoration: solid !important;
-    color: black;
-    text-align: center;
-    font-size: 1.4rem;
-    font-weight: 500;
-    /* grid-row: 3 / 3; */
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"] 
+{
+    font-size: 1.5rem;
 }
 
 .container-register .down {

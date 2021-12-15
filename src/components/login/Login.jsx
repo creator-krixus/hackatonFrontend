@@ -20,9 +20,9 @@ export default function Login() {
                         <label htmlFor="passw"></label>
                         <input className="input" type="password" name="passw" placeholder="Contraseña"/>
                     </div>
-                    <input className="secondary-button register input" type="submit" value="Enviar"/>
+                    <input className="secondary-button login-lo " type="submit" value="Enviar"/>
                 </form>
-                <Link className="a" to="register.html">¿No tienes cuenta? Crea una cuenta</Link>
+                <Link className="a-login" to="/register">¿No tienes cuenta? Crea una cuenta</Link>
                 <img className="down" src={waveorange} alt="Orange waves"/>
 
                 

@@ -2,7 +2,7 @@ import React from 'react';
 import waveorangeinverted from '../../assets/borders/waveorangeinverted.png';
 import waveorange from '../../assets/borders/waveorange.png';
 import { Link } from 'react-router-dom';
-import './Register.css'
+import './Register.css';
 
 export default function Register() {
     return (
@@ -13,7 +13,7 @@ export default function Register() {
                 <form className="main-form" action="">
                     <div className="main-form-fields">
                         <label htmlFor="name"></label>
-                        <input className="input" type="text" name="name" placeholder="Nombre completo"/>
+                        <input className="input-reg" type="text" name="name" placeholder="Nombre completo"/>
                     </div>
                     
                     <div className="main-form-fields">
@@ -30,12 +30,12 @@ export default function Register() {
                         <label htmlFor="cpassw"></label>
                         <input className="input" type="password" name="cpassw" placeholder="Confirmar contraseña"/>
                     </div>
-                    <input className="secondary-button register" type="submit" value="Enviar"/>
+                    <input className="secondary-button register-reg" type="submit" value="Enviar"/>
                 </form>
                 
 
-                <Link className="a" to="login">¿Ya tienes cuenta? Inicia sesión</Link>
-                <img className="down" src={waveorange} alt="Orange waves"/>
+                <Link className="a-register" to="/login">¿Ya tienes cuenta? Inicia sesión</Link>
+                <img className="down" src={waveorange} alt="Orange waves"/> 
 
                 
             </div>

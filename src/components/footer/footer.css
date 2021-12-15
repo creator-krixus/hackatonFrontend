@@ -43,6 +43,9 @@
 	font: bold 1.6rem sans-serif;
 	padding: 55px 50px;
 	font-family: 'Roboto', sans-serif;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
 }
 
 .footer-distributed .footer-left,
@@ -54,9 +57,10 @@
 
 /* Footer left */
 
-.footer-distributed .footer-left{
+/* .footer-distributed .footer-left{
 	width: 40%;
-}
+	border: 2px solid orange;
+} */
 
 /* The company logo */
 
@@ -95,9 +99,10 @@
 
 /* Footer Center */
 
-.footer-distributed .footer-center{
+/* .footer-distributed .footer-center{
 	width: 35%;
-}
+	border: 2px solid firebrick;
+} */
 
 .footer-distributed .footer-center i{
 	background-color:  #ffffff;
@@ -155,9 +160,10 @@
 
 /* Footer Right */
 
-.footer-distributed .footer-right{
+/* .footer-distributed .footer-right{
 	width: 20%;
-}
+	border: 2px solid green;
+} */
 
 .footer-distributed .footer-company-about{
 	line-height: 20px;

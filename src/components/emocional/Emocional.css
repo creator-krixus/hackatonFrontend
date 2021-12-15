@@ -131,7 +131,7 @@
     grid-area: 3 / 2 / 4 / 3;
 }
 
-.register-container {
+.register-container-emo {
     display: grid;
     grid-template-rows: 80px 100px;
     justify-items: center;
@@ -149,13 +149,15 @@
     width: 90px;
     height: 35px;
     cursor: pointer;
-    font-size: 1rem;
     font-weight: bold;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.register-container .register {
-    background: var(--dark-pink) !important;
+.register-container .register-emo {
+    background: var(--dark-pink);
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
 }
 
 .container-emo .down {

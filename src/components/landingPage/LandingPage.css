@@ -36,8 +36,8 @@
     min-width: 320px;
 } */
 
-.a {
-    font-size: var(--md);
+.a-lp {
+    /* font-size: 1.5rem; */
     text-decoration: none;
     color: black;
 
@@ -90,9 +90,9 @@
     align-items: center;
 }
 
-.container-buttons {
+.container-buttons-lp {
     display: grid;
-    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(3, 1fr);
     /* gap: 10px; */
     justify-items: center;
     align-items: center;
@@ -105,26 +105,25 @@
     width: 110px;
     height: 35px;
     cursor: pointer;
-    font-size: 1.2rem;
     font-weight: bold;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     align-items: center;
     justify-items: center;
 }
 
-.container-buttons .financiera:nth-child(1){
+.container-buttons-lp .financiera:nth-child(1){
     background: var(--light-green);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
-.container-buttons .laboral:nth-child(2){
+.container-buttons-lp .laboral:nth-child(2){
     background: var(--light-blue);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
-.container-buttons .emocional:nth-child(3){
+.container-buttons-lp .emocional:nth-child(3){
     background: var(--light-pink);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .main-aboutus .waves-blue {
@@ -180,15 +179,15 @@
     font-size: var(--md);
 }
 
-.main-services .encuesta {
+.main-services .encuesta-lp {
     text-decoration: none;
     background-color: var(--dark-purple);
     border-radius: 12px;
     border: 1px solid black;
-    width: 110px;
+    width: 115px;
     height: 35px;
     cursor: pointer;
-    font-size: var(--sm);
+    font-size: 1.5rem;
     font-weight: bold;
     color: black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -235,7 +234,7 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
-.main-benefits .button-container {
+.main-benefits .button-container-btn {
     grid-area: 3 / 3;
     transform: translateY(100%);
     visibility: hidden;
@@ -260,13 +259,13 @@
     }
 }
 
-.main-benefits .button-container .register {
+.main-benefits .button-container-btn .register-lp {
     text-decoration: none;
     background: var(--dark-purple);
     width: 110px;
     height: 35px;
     cursor: pointer;
-    font-size: var(--sm);
+    font-size: 1.5rem;
     font-weight: bold;
     color: black;
 }
