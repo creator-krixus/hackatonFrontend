@@ -1,8 +1,9 @@
 import React from 'react'
-import "./footer.css"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faEnvelope, faPhone, faMapMarked} from '@fortawesome/free-solid-svg-icons'
 import {faFacebook, faTwitter, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons'
+import { Link, useLocation } from 'react-router-dom';
+import "./footer.css"
 
 
 export default function Footer() {
@@ -10,71 +11,63 @@ export default function Footer() {
   const date = new Date();
   const year = date.getFullYear();
 
+  const location = useLocation();
+  const ruta = location.pathname
+  const idRuta = ruta.substring(1,20)
+  let color = {}
+
+  if(idRuta === 'emocional'){
+      color = {background: '#FF7878'}
+  }
+  if(idRuta === 'financiero'){
+      color = {background: '#507445'}
+  }
+
     return (
   <div>
-      <footer className="footer-distributed">
+      <div className="footer-distributed" style={color}>
+            <div className="footer-left">
+                <h3 className="h3-footer">Company<span className="span">name</span></h3>
+                <p className="footer-links">
+                    <Link to="#" className="a link-1">Home</Link>
+                    <Link className="a" to="#">Pilar Laboral</Link>
+                    <Link className="a" to="#">Pilar Financiero</Link>          
+                    <Link className="a" to="#">Pilar Emocional</Link>
+                    <Link className="a" to="#">Faq</Link>
+                    <Link className="a" to="#">Contacto</Link>
+                    <Link className="a" to="#">Sobre nosotros</Link>
+                </p>
 
-<div className="footer-left">
+                <p className="footer-company-name">Company Name © {year}</p>
+            </div>
 
-    <h3>Company<span>name</span></h3>
-
-    <p className="footer-links">
-        <a href="#" className="link-1">Home</a>
-        
-        <a href="#">Pilar Laboral</a>
-    
-        <a href="#">Pilar Financiero</a>
-    
-        <a href="#">Pilar Emocional</a>
-        
-        <a href="#">Faq</a>
-        
-        <a href="#">Contacto</a>
-        <a href="#">Sobre nosotros</a>
-    </p>
-
-    <p className="footer-company-name">Company Name © {year}</p>
-</div>
-
-<div className="footer-center">
-
-    <div>
-    <FontAwesomeIcon icon={faMapMarked}/>
-        <p><span></span> Colombia</p>
-    </div>
-
-    <div>
-    <FontAwesomeIcon icon={faPhone}/>
-        <p>+1.555.555.5555</p>
-    </div>
-
-    <div>
-    <FontAwesomeIcon icon={faEnvelope}/>
-        <p><a href="mailto:support@company.com">support@company.com</a></p>
-    </div>
-
-</div>
-
-<div className="footer-right">
-
-    <p className="footer-company-about">
-        <span>About the company</span>
-        Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
-    </p>
-
-    <div className="footer-icons">
-
-        <a href="#"> <FontAwesomeIcon icon={faFacebook}/> </a>
-        <a href="#"><FontAwesomeIcon icon={faTwitter}/></a>
-        <a href="#"><FontAwesomeIcon icon={faLinkedin}/></a>
-        <a href="#"><FontAwesomeIcon icon={faInstagram}/></a>
-        
-
-    </div>
-
-</div>
-
-</footer>
+            <div className="footer-center">
+                <div>
+                <FontAwesomeIcon icon={faMapMarked}/>
+                    <p className="p"><span className="span"></span> Colombia</p>
+                </div>
+                <div>
+                <FontAwesomeIcon icon={faPhone}/>
+                    <p className="p">+1.555.555.5555</p>
+                </div>
+                <div>
+                <FontAwesomeIcon icon={faEnvelope}/>
+                    <p className="p"><Link className="a" to="mailto:support@company.com">support@company.com</Link></p>
+                </div>
+            </div>
+            <div className="footer-right">
+                <p className="footer-company-about">
+                    <span className="span">About the company</span>
+                    Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+                </p>
+                <div className="footer-icons">
+                    <Link className="a" to="#"> <FontAwesomeIcon icon={faFacebook}/> </Link>
+                    <Link className="a" to="#"><FontAwesomeIcon icon={faTwitter}/></Link>
+                    <Link className="a" to="#"><FontAwesomeIcon icon={faLinkedin}/></Link>
+                    <Link className="a" to="#"><FontAwesomeIcon icon={faInstagram}/></Link>
+                </div>
+            </div>
+        </div>
     </div>
  )   
 }
