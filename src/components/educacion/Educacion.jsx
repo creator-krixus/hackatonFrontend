@@ -12,7 +12,7 @@ export default function Educacion() {
     return (
         
        <div>
-           <div className='container'>
+           <div className="container-en">
               <section className="main-learn">
                     <h4 className="learn--title title">Modulo de enseñanza.</h4>
                     <img ref={el =>callService = el} className="learn--img image" src={CallService} alt="Call service" />
