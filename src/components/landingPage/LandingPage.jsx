@@ -1,8 +1,7 @@
 import React, {useRef, useEffect } from 'react'
-import { TweenMax,Power3 } from 'gsap';
+import { TweenMax, Power3 } from 'gsap';
 import wavepurpleinverted from "../../assets/borders/wavepurpleinverted.png";
 import wavepurple from "../../assets/borders/wavepurple.png";
-
 import searchinglooking from "../../assets/images/purpleSearching-Looking.svg";
 import navigateboat from "../../assets/images/purpleNavigate -Rocktheboat.png";
 import singin from "../../assets/images/purpleSignIn.png";
@@ -24,7 +23,7 @@ export default function LandingPage() {
     let btnRegistro = useRef(null);
 
     useEffect(() =>{
-    TweenMax.staggerFrom([callService,searching,btnLab, wave,btnEmo, registrate,bote,btnServ,btnRegistro,btnFin,sing],0.8,{opacity:0, y:-540, ease:Power3.easeOut, delay:0.1})},[])
+    TweenMax.staggerFrom([callService, searching, btnLab, wave, btnEmo, registrate, bote, btnServ, btnRegistro, btnFin, sing], 0.8, {opacity:0, y:-540, ease:Power3.easeOut, delay:0.1})},[])
     // JS code
     return (
         <div >
@@ -39,7 +38,7 @@ export default function LandingPage() {
                     </div>
                     <div className="container-buttons">
                         
-                        <button ref={el =>btnFin = el}className="secondary-button financiera"> <Link className="a"   to="financiero">Financiero</Link></button>
+                        <button ref={el =>btnFin = el} className="secondary-button financiera"> <Link className="a"   to="financiero">Financiero</Link></button>
                         <button ref={el =>btnLab = el} className="secondary-button laboral"> <Link className="a"   to="laboral">Laboral</Link></button>
                         <button ref={el =>btnEmo = el} className="secondary-button emocional"> <Link className="a"   to="emocional">Emocional</Link></button>
                     </div>
