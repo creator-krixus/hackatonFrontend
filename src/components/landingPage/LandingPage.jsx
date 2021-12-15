@@ -1,4 +1,4 @@
-import React, {useRef, useEffect, useState} from 'react'
+import React, {useRef, useEffect } from 'react'
 import { TweenMax,Power3 } from 'gsap';
 import wavepurpleinverted from "../../assets/borders/wavepurpleinverted.png";
 import wavepurple from "../../assets/borders/wavepurple.png";
@@ -27,12 +27,8 @@ export default function LandingPage() {
     TweenMax.staggerFrom([callService,searching,btnLab, wave,btnEmo, registrate,bote,btnServ,btnRegistro,btnFin,sing],0.8,{opacity:0, y:-540, ease:Power3.easeOut, delay:0.1})},[])
     // JS code
     return (
-<<<<<<< HEAD
-        <div>
-=======
         <div >
->>>>>>> a6afa5ec18213e58e9a6e81ac5998c3f973c72bd
-            {/* <div className="main"> */}
+            
                 <section className="main-aboutus">
                     <img className="waves-blue-inverted" src={wavepurpleinverted} alt="Inverted blue waves"/>
                     <p className="p">Nacemos con el objetivo de ayudar y apoyar a los trabajadores ofreciendoles herramientaspara su vida financiera, laboral y emocional</p>
@@ -74,11 +70,7 @@ export default function LandingPage() {
                     </div>
                     <img ref={el =>registrate = el} className="wave-pink" src={wavepurple} alt="Pink waves"/>
                 </section>
-<<<<<<< HEAD
-           {/*  </div> */}
-=======
-            {/* </div> */}
->>>>>>> a6afa5ec18213e58e9a6e81ac5998c3f973c72bd
+            
         </div>
     )
 }

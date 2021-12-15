@@ -1,4 +1,4 @@
-import React, {useRef, useEffect, useState} from 'react'
+import React, { useRef, useEffect } from 'react'
 import { TweenMax,Power3 } from 'gsap';
 import './Educacion.css';
 import CallService from '../../assets/images/Call Service.png'

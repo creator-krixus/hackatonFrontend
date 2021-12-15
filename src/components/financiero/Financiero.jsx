@@ -1,5 +1,4 @@
-import React, {useRef, useEffect, useState} from 'react'
-import { Link } from 'react-router-dom';
+import React, {useRef, useEffect } from 'react'
 import { TweenMax,Power3 } from 'gsap';
 import './Financiero.css';
 import peaksgreeninverted from '../../assets/components/peaksgreeninverted.png'
@@ -13,9 +12,7 @@ export default function Financiero() {
     let girl = useRef(null);
     let finances = useRef(null);
     let work = useRef(null);
-    const[state, setState]= useState(false);
     
-
 
     // const reducir = () =>{
     //     TweenMax.to(work,.8,{duration: 2,
