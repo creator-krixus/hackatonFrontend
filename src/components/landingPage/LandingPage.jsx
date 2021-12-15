@@ -66,7 +66,7 @@ export default function LandingPage() {
                         <img ref={el =>sing = el} className="singin" src={singin} alt=""/>
                     </div>                 
                     <div className="button-container">
-                        <Link ref={el =>btnRegistro = el} className="secondary-button register" to="/">Regístrate</Link>
+                        <Link ref={el =>btnRegistro = el} className="secondary-button register" to="register">Regístrate</Link>
                     </div>
                     <img ref={el =>registrate = el} className="wave-pink" src={wavepurple} alt="Pink waves"/>
                 </section>
