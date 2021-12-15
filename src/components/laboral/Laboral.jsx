@@ -35,7 +35,7 @@ export default function Laboral(){
 
         <div className="register-container">
             <h3 className="last-title">Entre muchas otras herramientas. ¡Regístrate!</h3>
-            <button type="button" className="secondary-button register"></button>
+            <button type="button" className="secondary-button">Register</button>
         </div>
         
         <img src={squareblue} alt="Blue peaks" className="down"/>
