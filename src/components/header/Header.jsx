@@ -1,7 +1,7 @@
 import React from 'react';
-import menu from '../../assets/icons/bars-solid.svg';
 import icon from '../../assets/icons/meteor-solid.svg';
 import { Link, useLocation } from 'react-router-dom';
+import Menu from '../menu/Menu';
 import './Header.css'
 
 export default function Header() {
@@ -34,10 +34,8 @@ export default function Header() {
                 <Link to="/"><img src={icon} alt="Logo" className="navbar-logo"/> 
                 </Link>
             </div>
-            <h1 className="h1">Nombre de la web</h1>
-            <div className="navbar-menu">
-                <img className="img" src={menu} alt="menu" /> 
-            </div>
+            <h1 className="h1">TDCE</h1>
+            <Menu/>
         </nav>
         </div>
     )

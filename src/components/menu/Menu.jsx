@@ -1,7 +1,8 @@
 import React,{useState} from 'react'
 import './Menu.css'
-import {Dropdown, DropdownItem, DropdownMenu, DropdownToggle} from 'reactstrap'
-import girls from '../../assets/images/girls.png'
+import {Dropdown, DropdownMenu, DropdownToggle} from 'reactstrap'
+import { Link } from 'react-router-dom';
+import menud from '../../assets/icons/bars-solid.svg'
 
 
 export default function Menu() {
@@ -13,21 +14,18 @@ export default function Menu() {
      
     return (
 
-        <div className="container-emo">
-            <Dropdown isOpen={dropdown} toggle={abrirCerrarDropdown}> 
-                <DropdownToggle header className='label'>
-                    <label htmlFor="btn-menu" className='btn-menu'>
-                        <img className="test--img image" src={girls} alt="Work from home" />
-                    </label>  
+        <div className="container-menu">
+            <Dropdown className="dropdown" isOpen={dropdown} toggle={abrirCerrarDropdown}> 
+                <DropdownToggle className="dropbtn" header>
+                    <img className="navbar-logo" src={menud} alt="" />
                 </DropdownToggle>
 
-                <DropdownMenu className='menu'>
-                    <DropdownItem className='boton'> Laboral </DropdownItem>
-                    <DropdownItem className='boton'> Emocional </DropdownItem>
-                    <DropdownItem className='boton'> Encuesta </DropdownItem>
-                    <DropdownItem className='boton'>  Registate </DropdownItem>
-                    <DropdownItem className='boton'> uno </DropdownItem>
-                    <DropdownItem className='boton'> otro</DropdownItem>
+                <DropdownMenu className="dropdown-content">  
+                   <Link to="laboral" className="item" > Laboral </Link>
+                    <Link to="emocional" className="item" > Emocional </Link>
+                    <Link to="financiero" className="item" > Financiero </Link>
+                    <Link to="register" className="item" >  Registate </Link>
+                    <Link to="login" className="item" > Iniciar sesión </Link>
                 </DropdownMenu>                
             
             

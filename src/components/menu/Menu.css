@@ -1,63 +1,75 @@
+* {
+    font-size: 62.5%;
+}
 
-    
+:root {
+    --light-green: #CCD9BF;
+    --dark-green: #507445;
+    --light-blue: #B6D6F2;
+    --dark-blue: #517EA6;
+    --light-pink: #FFB5B5;
+    --dark-pink: #FF7878;
+    --light-mint: #C2DDC8;
+    --dark-mint :#99BFB3;
+    --light-purple: #C9B0EB;
+    --dark-purple: #996799;
+    --deep-purple: #422E53;
+
+    --sm: 1.2rem;
+    --md: 1.6rem;
+    --lg: 2.2rem;
+}
+
+.navbar-logo {
+    width: 25px;
+    height: 25px;
+    background-color: var(--dark-purple) !important;
+}
 
 
-.boton{
-    flex-grow: 1;
-    padding: 5px 20px;
-    border-radius: 20%;
+.dropbtn {
+    display: grid;
+    border: none;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    align-items: center;
+    justify-items: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--light-purple);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: -40px;
+}
+
+.dropdown-content .item {
+    color: black;
+    padding: 12px 16px; 
     display: block;
     text-decoration: none;
-   
+    font-size: var(--sm);
 }
 
-.label{
-    display: none;
-    width: 30px;
-    height: 30px;
-    padding: 10px;
-    border-right: 1px solid #fff;
-
-
+.dropdown-content .item:hover {
+    background-color: var(--dark-purple);
 }
 
-label:hover{
- cursor:pointer;
- background: rgba(0,0 ,0 ,0.3 alpha);
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
-.menu{
-    margin: 0;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-}
-
-.menu .boton:hover {
-    background: rgba(0,0 ,0 ,0.3 alpha);
-}
-
-.menu boton  {
-    flex-grow: 1;
-    border-right: 1px solid #fff;
-}
-
-@media (max-width:768px){
-
-    .label{
-        display: block;
-    }
-    .menu{
-        position: absolute;
-        flex-direction: column;
-        width: 70%;
-        margin-right: -70%;
-        transition: all 0.5s;
-    }
-
-    #btn-menu:checked ~ .menu{
-        margin: 0;
-    }
+.dropdown:hover .dropbtn {
+    background-color: var(--dark-purple);
 }

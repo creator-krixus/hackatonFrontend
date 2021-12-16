@@ -59,6 +59,7 @@ export default function Register() {
                   button: 'Aceptar'
               })
               setTimeout(clear, 2500)
+              window.location.href='/login'
               }
             })
             .catch(error => console.log(error))
