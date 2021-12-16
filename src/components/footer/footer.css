@@ -44,8 +44,6 @@
 	padding: 55px 50px;
 	font-family: 'Roboto', sans-serif;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	justify-items: center;
 }
 
 .footer-distributed .footer-left,
@@ -53,6 +51,7 @@
 .footer-distributed .footer-right{
 	display: inline-block;
 	vertical-align: top;
+	text-align: center;
 }
 
 /* Footer left */
@@ -204,9 +203,10 @@
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
-@media (max-width: 880px) {
+@media (min-width: 654px) {
 
 	.footer-distributed{
+		display: flex;
 		font: bold 1.4rem sans-serif;
 	}
 

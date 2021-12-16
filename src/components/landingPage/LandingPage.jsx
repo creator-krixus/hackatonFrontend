@@ -32,7 +32,7 @@ export default function LandingPage() {
                     <img className="waves-blue-inverted" src={wavepurpleinverted} alt="Inverted blue waves"/>
                     <p className="p">Nacemos con el objetivo de ayudar y apoyar a los trabajadores ofreciendoles herramientaspara su vida financiera, laboral y emocional</p>
                     <div className="aboutus-container">
-                        <img ref={el =>searching = el} src={searchinglooking} alt="Searching Looking"/>
+                        <img className="looking" ref={el =>searching = el} src={searchinglooking} alt="Searching Looking"/>
                         
                         <h3 className="h3">Nuestros tres pilares</h3>
                     </div>
@@ -53,7 +53,6 @@ export default function LandingPage() {
                     <div className="services-container">
                         <p className="p">Te tomará de 5 a 10 minutos</p>
                         <Link ref={el =>btnServ = el} className="secondary-button encuesta-lp" to="encuesta">Link a encuesta</Link>
-                        
                     </div>
                     <img  ref={el =>bote = el} className="navigate-boat" src={navigateboat} alt="Boat"/>
                     <img ref={el =>callService = el} className="wave-green" src={wavepurple} alt="Green waves"/>
@@ -63,6 +62,10 @@ export default function LandingPage() {
                     <img ref={el =>wave = el} className="wave-pink-inverted" src={wavepurpleinverted} alt="Inverted pink waves"/>
                     <div className="benefits-container" >
                         <h3 className="h3">Regístrate. Se parte de nuestra comunidad</h3>
+                        {/* <img ref={el =>sing = el} className="singin" src={singin} alt=""/> */}
+                    </div> 
+                    <div className="benefits-container-img" >
+                        {/* <h3 className="h3">Regístrate. Se parte de nuestra comunidad</h3> */}
                         <img ref={el =>sing = el} className="singin" src={singin} alt=""/>
                     </div> 
                     <div className="button-container-btn">
