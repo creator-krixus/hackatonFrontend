@@ -340,7 +340,7 @@ export default function Encuesta() {
                     </div>
                 </section>
 
-                <input className="secondary-button encuesta" type="submit" value="Calcular resultados"/>
+                <input className="secondary-button-enc encuesta" type="submit" value="Calcular resultados"/>
             
             
                 <img className="down" src={wavepurple} alt="Purple waves"/>

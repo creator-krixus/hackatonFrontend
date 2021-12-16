@@ -21,7 +21,7 @@ export default function Registrate() {
        <div>
            <div className='register-container-reg'>
                <h3 className='paragraph' ref={el =>{textItem = el}} >Entre muchas otras herramientas. ¡Regístrate!</h3>             
-               <Link to="register" className="secondary-button register">Regístrate</Link>
+               <Link to="/register" className="secondary-button-re register-re">Regístrate</Link>
             </div>
       </div>
    )

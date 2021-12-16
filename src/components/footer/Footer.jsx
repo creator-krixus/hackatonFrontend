@@ -3,7 +3,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faEnvelope, faPhone, faMapMarked} from '@fortawesome/free-solid-svg-icons'
 import {faFacebook, faTwitter, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import { Link, useLocation } from 'react-router-dom';
-import "./footer.css"
+import './Footer.css'
 
 
 export default function Footer() {
@@ -35,13 +35,13 @@ export default function Footer() {
             <div className="footer-left">
                 <h3 className="h3-footer">Company<span className="span">name</span></h3>
                 <p className="footer-links">
-                    <Link to="#" className="a link-1">Home</Link>
-                    <Link className="a" to="#">Pilar Laboral</Link>
-                    <Link className="a" to="#">Pilar Financiero</Link>          
-                    <Link className="a" to="#">Pilar Emocional</Link>
-                    <Link className="a" to="#">Faq</Link>
-                    <Link className="a" to="#">Contacto</Link>
-                    <Link className="a" to="#">Sobre nosotros</Link>
+                    <Link to="/" className="a link-1">Home</Link>
+                    <Link className="a" to="financiero">Pilar Financiero</Link>
+                    <Link className="a" to="laboral">Pilar Laboral</Link>          
+                    <Link className="a" to="emocional">Pilar Emocional</Link>
+                    <Link className="a" to="/">Faq</Link>
+                    <Link className="a" to="/">Contacto</Link>
+                    <Link className="a" to="/">Sobre nosotros</Link>
                 </p>
 
                 <p className="footer-company-name">Company Name © {year}</p>
