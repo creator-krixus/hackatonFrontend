@@ -10,7 +10,7 @@ import Laboral from './components/laboral/Laboral'
 import Encuesta from './components/encuesta/Encuesta';
 import LandingPageLogin from './components/landingPageLogin/LandingPageLogin';
 import Footer from './components/footer/Footer';
-import Menu from './components/menu/Menu';
+
 
 function App() {
   return (

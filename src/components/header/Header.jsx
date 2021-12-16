@@ -1,5 +1,4 @@
 import React from 'react';
-import menu from '../../assets/icons/bars-solid.svg';
 import icon from '../../assets/icons/meteor-solid.svg';
 import { Link, useLocation } from 'react-router-dom';
 import Menu from '../menu/Menu';
