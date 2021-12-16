@@ -155,6 +155,7 @@
 .helpus-item .h4 {
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: medium;
 }
 .helpus-item .a {
     color: white;
@@ -205,4 +206,7 @@
     max-height: 65px;
     position: absolute;
     bottom: 0;
+}
+.img-waveOrange{
+    width: 100%;
 }
