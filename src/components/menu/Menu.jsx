@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import './Menu.css'
-import {Dropdown, DropdownItem, DropdownMenu, DropdownToggle} from 'reactstrap'
+import {Dropdown, DropdownMenu, DropdownToggle} from 'reactstrap'
 import { Link } from 'react-router-dom';
 import menud from '../../assets/icons/bars-solid.svg'
 
