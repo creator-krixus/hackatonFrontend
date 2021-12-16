@@ -91,12 +91,12 @@ export default function Register() {
                         <label htmlFor="cpassw"></label>
                         <input className="input" type="password" name="confirmPassword" onChange={data} placeholder="Confirmar contraseña"/>
                     </div>
-                    <input className="secondary-button register" type="submit" value="Enviar" onClick={enviarDatos}/>
+                    <input className="secondary-button register-reg" type="submit" value="Enviar" onClick={enviarDatos}/>
                 </form>
                 
 
-                <Link className="a" to="login">¿Ya tienes cuenta? Inicia sesión</Link>
-                <img className="down" src={waveorange} alt="Orange waves"/>
+                <Link className="a-register" to="/login">¿Ya tienes cuenta? Inicia sesión</Link>
+                <img className="down" src={waveorange} alt="Orange waves"/> 
 
                 
             </div>

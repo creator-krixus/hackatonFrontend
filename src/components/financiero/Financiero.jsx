@@ -49,7 +49,7 @@ export default function Financiero() {
                     <h4 className="calculators--title title">Acceder a calculadoras para tu día a día</h4>
                     <p className="calculators--prg paragraph">Enlazamos recursos oficiales del Ministerio de Trabajo para que lo tengas a la mano.</p>
                     <img ref={el => finances = el} className="calculators--img image" src={Finances} alt="Finances" />
-                    <p className="calculators--prg paragraph">De la mano de los datos anomizados de nuestros usuarios ofrecemos rangos salariales.</p>
+                    <p className="calculators--prg paragraph">De la mano de los datos anonimizados de nuestros usuarios ofrecemos rangos salariales.</p>
                 </section>
                 <section className="main-spends">
                     <h4 className="spends--title title">Te contamos cuanto cobrar por un trabajo</h4>

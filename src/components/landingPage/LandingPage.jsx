@@ -32,18 +32,18 @@ export default function LandingPage() {
                     <img className="waves-blue-inverted" src={wavepurpleinverted} alt="Inverted blue waves"/>
                     <p className="p">Nacemos con el objetivo de ayudar y apoyar a los trabajadores ofreciendoles herramientaspara su vida financiera, laboral y emocional</p>
                     <div className="aboutus-container">
-                        <img ref={el =>searching = el} src={searchinglooking} alt="Searching Looking"/>
+                        <img className="looking" ref={el =>searching = el} src={searchinglooking} alt="Searching Looking"/>
                         
                         <h3 className="h3">Nuestros tres pilares</h3>
                     </div>
-                    <div className="container-buttons">
+                    <div className="container-buttons-lp">
                         
-                        <Link ref={el =>btnFin = el} className="secondary-button financiera a"   to="financiero">Financiero</Link>
-                        <Link ref={el =>btnLab = el} className="secondary-button laboral a"   to="laboral">Laboral</Link>
-                        <Link ref={el =>btnEmo = el} className="secondary-button emocional a"   to="emocional">Emocional</Link>
+                        <Link ref={el =>btnFin = el} className="secondary-button financiera a-lp"   to="financiero">Financiero</Link>
+                        <Link ref={el =>btnLab = el} className="secondary-button laboral a-lp"   to="laboral">Laboral</Link>
+                        <Link ref={el =>btnEmo = el} className="secondary-button emocional a-lp"   to="emocional">Emocional</Link>
                     </div>
                     
-                    <h4 className="h4">Conocélos para saber como poder ayudarte</h4>
+                    <h4 className="h4">Conócelos para saber como poder ayudarte</h4>
                     <img className="waves-blue" src={wavepurple} alt="Waves blue"/>
                 </section>
 
@@ -52,8 +52,7 @@ export default function LandingPage() {
                     <h3 className="h3">Te invitamos a tener un abrebocas de nuestro servicio</h3>
                     <div className="services-container">
                         <p className="p">Te tomará de 5 a 10 minutos</p>
-                        <Link ref={el =>btnServ = el} className="secondary-button encuesta" to="encuesta">Link a encuesta</Link>
-                        
+                        <Link ref={el =>btnServ = el} className="secondary-button encuesta-lp" to="encuesta">Link a encuesta</Link>
                     </div>
                     <img  ref={el =>bote = el} className="navigate-boat" src={navigateboat} alt="Boat"/>
                     <img ref={el =>callService = el} className="wave-green" src={wavepurple} alt="Green waves"/>
@@ -63,10 +62,14 @@ export default function LandingPage() {
                     <img ref={el =>wave = el} className="wave-pink-inverted" src={wavepurpleinverted} alt="Inverted pink waves"/>
                     <div className="benefits-container" >
                         <h3 className="h3">Regístrate. Se parte de nuestra comunidad</h3>
+                        {/* <img ref={el =>sing = el} className="singin" src={singin} alt=""/> */}
+                    </div> 
+                    <div className="benefits-container-img" >
+                        {/* <h3 className="h3">Regístrate. Se parte de nuestra comunidad</h3> */}
                         <img ref={el =>sing = el} className="singin" src={singin} alt=""/>
-                    </div>                 
-                    <div className="button-container">
-                        <Link ref={el =>btnRegistro = el} className="secondary-button register" to="register">Regístrate</Link>
+                    </div> 
+                    <div className="button-container-btn">
+                        <Link ref={el =>btnRegistro = el} className="secondary-button register-lp" to="register">Regístrate</Link>
                     </div>
                     <img ref={el =>registrate = el} className="wave-pink" src={wavepurple} alt="Pink waves"/>
                 </section>
