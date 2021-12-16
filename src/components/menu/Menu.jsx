@@ -14,13 +14,12 @@ export default function Menu() {
 
         <div className="container-emo">
             <Dropdown isOpen={dropdown} toggle={abrirCerrarDropdown}> 
-                <DropdownToggle>
-                    Dropdown ejemplo
+                <DropdownToggle header>
+                    Menu
                 </DropdownToggle>
 
-                <DropdownMenu>
-                    <DropdownItem> Financiero </DropdownItem>
-                    <DropdownItem> Laboral </DropdownItem>
+                <DropdownMenu>  
+                   <DropdownItem> Laboral </DropdownItem>
                     <DropdownItem> Emocional </DropdownItem>
                     <DropdownItem> Encuesta </DropdownItem>
                     <DropdownItem>  Registate </DropdownItem>
