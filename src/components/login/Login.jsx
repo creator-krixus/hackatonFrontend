@@ -25,7 +25,7 @@ export default function Login() {
         axios.post('https://backend-hackaton2021.herokuapp.com/api/v1/users/login', state)
           .then(res => {
             console.log(res.data.token)
-            window.location.href='/'})
+            window.location.href='/dlogin'})
           .catch(error => console.log(error))
       }
     return (
@@ -43,9 +43,9 @@ export default function Login() {
                         <label htmlFor="passw"></label>
                         <input className="input" type="password" name="password" placeholder="Contraseña" onChange={data}/>
                     </div>
-                    <input className="secondary-button register input" type="submit" value="Enviar" onClick={iniciarSesion}/>
+                    <input className="secondary-button login-lo input" type="submit" value="Enviar" onClick={iniciarSesion}/>
                 </form>
-                <Link className="a" to="register">¿No tienes cuenta? Crea una cuenta</Link>
+                <Link className="a-login" to="/register">¿No tienes cuenta? Crea una cuenta</Link>
                 <img className="down" src={waveorange} alt="Orange waves"/>
 
                 
