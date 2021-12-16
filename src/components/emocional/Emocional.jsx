@@ -6,7 +6,6 @@ import girls from '../../assets/images/girls.png'
 import pinkCall from '../../assets/images/pinkCallService.png'
 import curlPink from '../../assets/borders/curlpink.png'
 import { TweenMax,Power3 } from 'gsap';
-import { Link } from 'react-router-dom'
 
 
 export default function Emocional() {
@@ -49,7 +48,7 @@ export default function Emocional() {
 
             <div  className="register-container">
                 <h3 className="last-title">Entre muchas otras herramientas. ¡Regístrate!</h3>
-                <Link to="/register" ref={el => boton = el} className="secondary-button register-emo">Regístrate</Link>
+                <button  ref={el => boton = el} className="secondary-button register"><a href="/">Regístrate</a></button>
             </div>
             
             <img src={curlPink} alt="Blue peaks" className="down"></img> 

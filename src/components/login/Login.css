@@ -21,7 +21,7 @@
     --lg: 2.2rem;
 }
 
-.a-login {
+.a {
     color: black;
     text-align: center;
     font-size: 1.4rem;
@@ -58,13 +58,6 @@
     align-self: flex-end;
 }
 
- 
-input[type="email"], 
-input[type="password"] 
-{
-    font-size: 1.5rem;
-}
-
 .secondary-button {
     border-radius: 12px;
     border: 1px solid black;
@@ -76,9 +69,8 @@ input[type="password"]
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.main-form .login-lo {
+.main-form .register {
     background: var(--dark-orange);
-    font-size: 1.5rem;
 }
 
 .main-form-fields .input {

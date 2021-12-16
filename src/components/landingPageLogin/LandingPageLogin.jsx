@@ -13,10 +13,10 @@ export default function LandingPageLogin() {
     return (
         <div className="container-pl">
             <section className="main-welcome">
-                <img src={waveorangeinverted} alt="Inverted orange waves"/>
+                <img className="img-waveOrange" src={waveorangeinverted} alt="Inverted orange waves"/>
                 <section className="welcome-container">
-                    <h4 className="h4">Bienvenido: Nombre</h4>
-                    <p className="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nisi explicabo, exercitationem quod nulla debitis quisquam. </p>
+                    <h4 className="h4">Bienvenido: David</h4>
+                    <p className="p">Escoge un trabajo que te guste, y nunca tendrás que trabajar ni un solo día de tu vida - Confucio </p>
                     <img src={orangewindow} alt="Window"/>
                 </section>
                 <h4 className="progress">Tu progreso actual</h4>
