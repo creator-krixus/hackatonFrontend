@@ -11,10 +11,11 @@ import Encuesta from './components/encuesta/Encuesta';
 import LandingPageLogin from './components/landingPageLogin/LandingPageLogin';
 import Footer from './components/footer/Footer';
 
+
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <Header />
            
       <Routes>
         <Route path="/" element={<LandingPage />} />
