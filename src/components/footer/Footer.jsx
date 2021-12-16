@@ -3,7 +3,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faEnvelope, faPhone, faMapMarked} from '@fortawesome/free-solid-svg-icons'
 import {faFacebook, faTwitter, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import { Link, useLocation } from 'react-router-dom';
-import './Footer.css'
+import './footer.css'
 
 
 export default function Footer() {
@@ -28,6 +28,9 @@ export default function Footer() {
   if(idRuta === 'register' || idRuta === 'login'){
     color = {background: '#F2994B'}
   }
+  if(idRuta === 'dlogin'){
+    color = {background: '#F2994B'}
+}
 
     return (
   <div>
