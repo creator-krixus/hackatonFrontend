@@ -25,7 +25,7 @@ export default function Footer() {
   if(idRuta === 'laboral'){
     color = {background: '#517EA6'}
   }
-  if(idRuta === 'register' || idRuta === 'login'){
+  if(idRuta === 'register' || idRuta === 'login' || 'dlogin'){
     color = {background: '#F2994B'}
   }
 
