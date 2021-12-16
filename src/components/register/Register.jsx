@@ -96,8 +96,8 @@ export default function Register() {
                 </form>
                 
 
-                <Link className="a-register" to="/login">¿Ya tienes cuenta? Inicia sesión</Link>
-                <img className="down" src={waveorange} alt="Orange waves"/> 
+                <Link className="a" to="login">¿Ya tienes cuenta? Inicia sesión</Link>
+                <img className="down" src={waveorange} alt="Orange waves"/>
 
                 
             </div>

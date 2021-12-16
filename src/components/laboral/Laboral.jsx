@@ -54,7 +54,7 @@ useEffect(() =>{
         </section>
         <div className="register-container">
             <h3 className="last-title">Entre muchas otras herramientas. ¡Regístrate!</h3>
-            <Link to="/register" className="secondary-button register a">Regístrate</Link>
+            <Link to="register" className="secondary-button register a">Regístrate</Link>
         </div>
         <div>
                 <img ref={el => abajo = el} src={down} alt="Blue peaks" className="down"/>

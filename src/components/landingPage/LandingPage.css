@@ -28,19 +28,18 @@
     --light-orange: #F2BF80;
 
     --sm: 1.2rem;
-    --md: 1.6rem;
-    --lg: 2.2rem;
+    --md: 2.0rem;
+    --lg: 2.5rem;
 }
 
 /* body {
     min-width: 320px;
 } */
 
-.a-lp {
-    /* font-size: 1.5rem; */
+.a {
+    font-size: var(--sm);
     text-decoration: none;
     color: black;
-
 }
 
 .main {
@@ -90,40 +89,42 @@
     align-items: center;
 }
 
-.container-buttons-lp {
+.container-buttons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* gap: 10px; */
+    gap: 20px;
     justify-items: center;
     align-items: center;
+    
+
 }
+.container-buttons > button {
+    size: 20px;
+    display:inline
+}
+
 
 .secondary-button {
-    display: grid;
     border-radius: 12px;
     border: 1px solid black;
-    width: 110px;
+    width: 90px !important;
     height: 35px;
     cursor: pointer;
+    font-size: 1rem;
     font-weight: bold;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    align-items: center;
-    justify-items: center;
 }
 
-.container-buttons-lp .financiera:nth-child(1){
+.container-buttons .financiera:nth-child(1){
     background: var(--light-green);
-    font-size: 1.5rem;
 }
 
-.container-buttons-lp .laboral:nth-child(2){
+.container-buttons .laboral:nth-child(2){
     background: var(--light-blue);
-    font-size: 1.5rem;
 }
 
-.container-buttons-lp .emocional:nth-child(3){
+.container-buttons .emocional:nth-child(3){
     background: var(--light-pink);
-    font-size: 1.5rem;
 }
 
 .main-aboutus .waves-blue {
@@ -143,7 +144,7 @@
 .main-services {
     display: grid;
     width: auto;
-    height: 476px;
+    height: fit-content;
     background-color: var(--light-purple);
     position: relative;
     overflow-x: hidden;
@@ -179,24 +180,19 @@
     font-size: var(--md);
 }
 
-.main-services .encuesta-lp {
-    text-decoration: none;
+.main-services .encuesta {
     background-color: var(--dark-purple);
     border-radius: 12px;
     border: 1px solid black;
-    width: 115px;
+    width: 90px;
     height: 35px;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
-    color: black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.navigate-boat {
-    justify-self: center;
-    
-}
+
 
 .main-services .wave-green {
     min-width: 100%;
@@ -209,7 +205,7 @@
     display: grid;
     grid-template-rows: repeat(3,1fr);
     width: auto;
-    height: 500px;
+    height: 476px;
     background-color: var(--light-purple);
     position: relative;
     overflow-x: hidden;
@@ -229,20 +225,12 @@
 
 .main-benefits .benefits-container {
     display: grid;
-    /* row-gap: 30px; */
+    row-gap: 30px;
     grid-area: 2 / 3;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
 }
 
-.benefits-container-img {
-    display: grid;
-    grid-area: 2 / 3;
-    position: relative;
-    left: calc(100% / 5);
-}
-
-.main-benefits .button-container-btn {
+.main-benefits .button-container {
     grid-area: 3 / 3;
     transform: translateY(100%);
     visibility: hidden;
@@ -266,16 +254,12 @@
         
     }
 }
+.main-services {
+    height: fit-content;
+}
 
-.main-benefits .button-container-btn .register-lp {
-    text-decoration: none;
+.main-benefits .button-container .register {
     background: var(--dark-purple);
-    width: 110px;
-    height: 35px;
-    cursor: pointer;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: black;
 }
 
 .main-benefits .wave-pink {
@@ -284,212 +268,93 @@
     position: absolute;
     bottom: 0;
 }
+/*   modificaciones responsive */ 
+.main-benefits .wave-pink {
+    min-width: 100%;
+    max-height: 75px;
+    position: absolute;
+    bottom: 0;
+}
+/* tamaño imagen */ 
+.aboutus-container > .searching-Picture{
+    height: 100%;
+}
 
-@media (min-width: 650px ) {
-
-    .main-aboutus .p {
-        width: 400px;
-        font-size: 2.4rem;
-        line-height: 2.4rem;
-        position: absolute;
-        left: 50px;
+.main-aboutus > div > .initial-paragraph {
+    padding: 5%;    
+    font-size: 20px;
     }
 
-    .looking {
-        position: absolute;
-        width: 350px;
-        top: 70px;
-        right: -20px;
-    }
+.main-aboutus{
+    height: fit-content;
+}
 
-    .main-aboutus .h3, .h4 {
-        display: none;
-    }
+.contenedorBote > .purpleBote {
+    height: 10%;
+    justify-self: center;
+}
+/* */
+.title-pilars {
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    position:relative;
+    text-align: center;
+}
+.aboutus-container > .lookingPicture {
+    height: 100%;
+    display: inline;
+}
 
-    .container-buttons-lp {
+@media (min-width: 880px) {
+
+    .waves-blue-inverted{
         display: block;
-        position: absolute;
-        left: 50px;
-        bottom: 50px;
-        
+		width: 100%;
+	
     }
-
-    .container-buttons-lp .financiera {
-        position: absolute;
-        left: 50px;
-        bottom: 150px;
-        
-    }
-    .container-buttons-lp .laboral {
-        position: absolute;
-        left: 80px;
-        bottom: 100px;
-        
-    }
-    .container-buttons-lp .emocional {
-        position: absolute;
-        left: 110px;
-        bottom: 50px;
-        
-    }
-
-    .a-lp {
-        margin-top: 15px;
-        width: 150px;
-    }
-
-    .main-services .h3 {
-        width: 370px;
-        padding-top: 50px;
-        padding-left: 50px;
-        padding-bottom: 20px;
-    }
-
-    .services-container .encuesta-lp {
-        z-index: 1000;
-        position: absolute;
-        left: 70px;
-        top: 300px;
-    }
-
-    .navigate-boat {
-        z-index: 300;
-        position: absolute;
-        right: 20px;
-        top: 30px;
-        width: 320px;
-    }
-
-    .services-container .p {
-        z-index: 500;
-        position: absolute;
-        left: 70px;
-        top: 250px;
-        font-size: 1.8rem;
-    }
+    .main-aboutus >.p {
     
-    .benefits-container-img .singin {
-        width: 300px;
+    font-size: 30px;
     }
-    .button-container-btn {
-        display: grid;
-        grid-area: 2 / 1 / 3 / 2;
-        /* display: flex; */
-        z-index: 1000;
-        justify-self: left;
-        margin-left: 150px;
-        position: absolute;
-        bottom: 150px; 
+    .title-pilars {
+        font-size: 28px;
+    }
+    .h4 {
+        font-size: 25px;
+    }
+    .p {
+        font-size: 25px;
+    }
+    .contenedorBote > .purpleBote {
+        height: 30%;
+        justify-self: center;
+    }
+ 
+}
+
+@media (min-width: 1280px) {
+
+    .waves-blue-inverted{
+        display: block;
+		width: 100%;
+	
+    }
+    .p {
+    
+    font-size: 40px;
+    }
+    .h3 {
+        font-size: 40px;
+    }
+    .h4 {
+        font-size: 25px;
+    }
+    .p {
+        font-size: 25px;
+    }
+    .contenedorBote > .purpleBote {
+        height: 50%;
+        justify-self: center;
     }
 }
-    
-@media (min-width: 900px) {
-
-    .main-aboutus .p {
-        width: 400px;
-        font-size: 2.4rem;
-        line-height: 2.4rem;
-        position: absolute;
-        left: 100px;
-    }
-
-    .looking {
-        position: absolute;
-        width: 400px;
-        top: 30px;
-        right: 60px;
-    }
-
-    .main-aboutus .h3, .h4 {
-        display: none;
-    }
-
-    .container-buttons-lp {
-        display: block;
-        position: absolute;
-        left: 100px;
-        bottom: 50px;
-        
-    }
-
-    .container-buttons-lp .financiera {
-        position: absolute;
-        left: 50px;
-        bottom: 150px;
-        
-    }
-    .container-buttons-lp .laboral {
-        position: absolute;
-        left: 80px;
-        bottom: 100px;
-        
-    }
-    .container-buttons-lp .emocional {
-        position: absolute;
-        left: 110px;
-        bottom: 50px;
-        
-    }
-
-    .a-lp {
-        margin-top: 15px;
-        width: 150px;
-    }
-
-    .main-services .h3 {
-        font-weight: bold;
-        width: 400px;
-        padding-top: 50px;
-        padding-left: 50px; 
-        margin-left: 120px;
-    }
-
-    .services-container .encuesta-lp {
-        z-index: 1000;
-        position: absolute;
-        left: 170px;
-        top: 270px;
-    }
-
-    .navigate-boat {
-        z-index: 300;
-        position: absolute;
-        left: 570px;
-        top: 20px;
-        width: 320px;
-        height: 320px;
-    }
-
-    .services-container .p {
-        z-index: 500;
-        position: absolute;
-        left: 170px;
-        top: 220px;
-        font-size: 1.8rem;
-    }
-
-    .benefits-container .h3 {
-        position: absolute;
-        left: 150px;
-    }
-    
-    .benefits-container-img .singin {
-        width: 300px;
-        height: 300px;
-        position: absolute;
-        right: 30px;
-        bottom: -140px;
-    }
-    .button-container-btn {
-        display: grid;
-        grid-area: 2 / 1 / 3 / 2;
-        /* display: flex; */
-        z-index: 1000;
-        justify-self: left;
-        margin-left: 150px;
-        position: absolute;
-        bottom: 150px;  
-        left: -530px;
-    } 
-} 
-
