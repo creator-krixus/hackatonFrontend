@@ -28,6 +28,9 @@ export default function Footer() {
   if(idRuta === 'register' || idRuta === 'login'){
     color = {background: '#F2994B'}
   }
+  if(idRuta === 'dlogin'){
+    color = {background: '#F2994B'}
+}
 
     return (
   <div>

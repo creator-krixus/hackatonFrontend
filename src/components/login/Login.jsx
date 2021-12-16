@@ -25,7 +25,7 @@ export default function Login() {
         axios.post('https://backend-hackaton2021.herokuapp.com/api/v1/users/login', state)
           .then(res => {
             console.log(res.data.token)
-            window.location.href='/'})
+            window.location.href='/dlogin'})
           .catch(error => console.log(error))
       }
     return (
