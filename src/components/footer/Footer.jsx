@@ -77,6 +77,7 @@ export default function Footer() {
                 </div>
             </div>
         </div>
+        <Link to='https://www.freepik.com/vectors/people' className='a'>People vector created by stories - www.freepik.com</Link>
     </div>
  )   
 }
