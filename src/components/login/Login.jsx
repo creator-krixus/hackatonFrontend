@@ -43,7 +43,7 @@ export default function Login() {
                         <label htmlFor="passw"></label>
                         <input className="input" type="password" name="password" placeholder="Contraseña" onChange={data}/>
                     </div>
-                    <input className="secondary-button register-log input" type="submit" value="Enviar" onClick={iniciarSesion}/>
+                    <input className="secondary-button login-lo input" type="submit" value="Enviar" onClick={iniciarSesion}/>
                 </form>
                 <Link className="a-login" to="/register">¿No tienes cuenta? Crea una cuenta</Link>
                 <img className="down" src={waveorange} alt="Orange waves"/>
